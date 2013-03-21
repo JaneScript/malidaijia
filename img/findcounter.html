@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta name="Description" content=" " />
+<meta name="Keywords" content="" />
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/brand.css" />
+<link rel="stylesheet" href="css/jscrollPane.css" />
+<link rel="stylesheet" href="css/colorbox.css">
+</head>
+<body>
+<div id="logo">
+	<div class="box">
+		<h1><a href="home.html" title="">玛丽黛佳</a></h1>
+        <h2>
+        	<a href="" title="" class="toplink_login">登录</a>
+        	<a href="" title="" class="toplink_reg">注册</a>
+        	<a href="" title="" class="toplink_music">音乐</a>
+        	<a href="" title="" class="toplink_weibo">玛丽黛佳新浪微博</a>
+        </h2>
+	</div>
+</div>
+<div class="box">
+	<div id="nav">
+		<ul>
+		<li class="current"><a href="brandfounder.html" title="">brand 品牌</a><span>|</span></li>
+		<li id="product"><a href="product.html" title="">product 产品</a><span>|</span></li>
+		<li><a href="exchange.html" title="">exchange 交流</a><span>|</span></li>
+		<li><a href="" title="">class 玛粉学院</a><span>|</span></li>
+		<li><a href="" title="">m'fans 玛粉社</a></li>
+		</ul>
+		<div id="pop">
+			<dl class="subnav">
+			<dt>眼部产品 <br />EYES</dt>
+			<dd><a href="" title="">睫毛膏</a></dd>
+			<dd><a href="" title="">眼线笔</a></dd>
+			<dd><a href="" title="">眼影</a></dd>
+			<dd><a href="" title="">眉粉</a></dd>
+			<dd class="sb-img" id="eyesproduct"></dd>
+			</dl>
+			<dl class="subnav">
+			<dt>面部产品 <br />FACE</dt>
+			<dd><a href="" title="">粉饼</a></dd>
+			<dd><a href="" title="">两用粉饼</a></dd>
+			<dd><a href="" title="">B.B霜</a></dd>
+			<dd><a href="" title="">腮红</a></dd>
+			<dd><a href="" title="">卸妆油</a></dd>
+			<dd class="sb-img" id="faceproduct"></dd>
+			</dl>
+			<dl class="subnav">
+			<dt>唇部产品 <br />LIPS</dt>
+			<dd><a href="" title="">唇膏</a></dd>
+			<dd><a href="" title="">唇彩</a></dd>
+			<dd class="sb-img" id="lipsproduct"></dd>
+			</dl>
+		</div>
+	</div>
+	<div id="findcontent">
+		<div id="findleft"></div>
+		<div id="findright">
+			<p class="findtitle1">寻找您身边的玛丽黛佳专柜</p>
+			<p class="findtitle2">输入你要查找的城市或省份:</p>
+			<div class="findselectarea">
+				<select><option value=''>请选择</option></select>
+				<select><option value=''>请选择</option></select>
+				<select><option value=''>请选择</option></select>
+				<div class="btn"></div>
+			</div>
+			<div class="arealist">
+				<div class="areasection">
+					<p class="countername">福建省旗舰店</p>
+					<p class="counteraddress">地址 : 厦门市1234路567号</p>
+					<p class="countertel">电话 : 013-123456677</p>
+				</div>
+				<div class="areasection"></div>
+				<div class="areasection"></div>
+				<div class="areasection"></div>
+				<div class="areapagenav">
+					<div class="pagepoint current fl" p="0"></div>
+					<div class="pagepoint fl" p="1"></div>
+					<div class="pagepoint fl" p="2"></div>
+					<div class="pagepoint fl" p="3"></div>
+					<div class="pagepoint fl" p="4"></div>
+					<div class="pagepoint fl" p="5"></div>
+					<div class="pagepoint fl" p="6"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="foot">
+        <ul>
+        	<li style="padding-left:0">&copy;2012 上海菲扬化妆品有限公司版权所有</li>
+            <li><a href="#">网站导航</a></li>
+            <li><a href="#">查找专柜</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">诚征英才</a></li>
+            <li>沪ICP备08100694</li>
+            <li><em>search</em></li>
+            <li class="search"><input type="submit" class="sm"/><input type="text" name="" class="txt"/></li>
+        </ul>
+		</div>
+	</div>
+</div>
+<div></div>
+</body>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/js.js"></script>
+
+<script>
+	$('.recruitmentBtn img').hover(function(){//招聘按钮
+		$(this).attr('src','img/recruitment_btn1.png');
+	},function(){
+		$(this).attr('src','img/recruitment_btn.png');
+	})
+	$('.btn').hover(function(){
+		$(this).css('background-position','top')
+	},function(){
+		$(this).css('background-position','bottom')
+	})
+	$('.areasection').hover(function(){
+		$(this).css('background','url(img/area_bg2.png) no-repeat')
+	},function(){
+		$(this).css('background','url(img/area_bg1.png) no-repeat')
+	})
+	$('.pagepoint').click(function(){
+		$(this).addClass('current').siblings().removeClass('current');
+	})
+</script>
+</html>

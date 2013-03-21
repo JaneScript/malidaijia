@@ -1,0 +1,138 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre, form,fieldset,input,textarea,p,blockquote,th,td { padding: 0; margin: 0; } 
+table { border-collapse: collapse; border-spacing: 0; } 
+fieldset,img { border: 0; } 
+address,caption,cite,code,dfn,em,strong,th,var { font-weight: normal; font-style: normal; } 
+ol,ul { list-style: none; } 
+caption,th { text-align: left; } 
+h1,h2,h3,h4,h5,h6 { font-weight: normal; font-size: 100%; }
+body{font-size:12px;background:#fff;}
+a{text-decoration:none;cursor:pointer}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+a:focus{outline:none;}
+img{border:0 none;vertical-align:middle;} 
+.clear{clear:both;height:0px;line-height:0px;font-size:0px;overflow:hidden;}
+.clearfix:after{clear:both;height:0px;display:block;content:"";}
+.clearfix{display:block;zoom:1;}
+.hide{display:none;}
+body{font:12px "宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;background:url(../img/brandbg.jpg) repeat-x;}
+.box{width:1024px;margin:0 auto;}
+#logo{height:63px;background:#000;position:fixed;left:0px;top:0px;width:100%;z-index:12;_position:absolute;}
+h1{width:223px;height:52px;background:url(../img/logo.jpg) no-repeat;text-indent:-9999px;position:relative;top:4px;left:10px;}
+h1 a{display:block;width:223px;height:52px;}
+h2{width:214px;height:20px;background:url(../img/topnav.jpg) no-repeat;text-indent:-9999px;position:relative;top:-20px;left:810px;}
+h2 a.toplink_login{display:block;width:28px;height:20px; top:0; left:0; position:absolute;}
+h2 a.toplink_reg{display:block;width:28px;height:20px; top:0; left:28px; position:absolute;}
+h2 a.toplink_music{display:block;width:22px;height:20px; top:0; left:70px; position:absolute;}
+h2 a.toplink_weibo{display:block;width:110px;height:20px; top:0; left:103px; position:absolute;}
+#nav{height:31px;margin-top:63px;padding-left:224px;position:relative;}
+#nav li{float:left;width:160px;height:31px;}
+#nav li a{float:left;width:159px;height:31px;text-align:center;font:12px/31px 微软雅黑;text-transform:uppercase;color:#e0e0e0;}
+#nav li a:hover{background:url(../img/hover.png) no-repeat;}
+#nav li.current a{background:url(../img/hover.png) no-repeat;}
+#nav li span{float:right;width:1px;height:31px;background:url(../img/border.jpg) no-repeat;text-indent:-9999px;}
+#pop{background:url(../img/pop.jpg) repeat-x;height:205px;width:387px;position:absolute;left:383px;top:31px;z-index:10;padding-left:15px;display:none;}
+.subnav{float:left;width:122px;height:190px;position:relative;margin-right:4px;}
+.subnav dt{color:#fff;font:14px/18px 宋体;margin-top:8px;margin-bottom:10px;}
+.subnav dd a{color:#777;font:12px/15px 宋体;}
+.subnav dd a:hover{color:#c30;}
+.subnav .sb-img{width:114px;height:46px}
+.subnav  #eyesproduct{background:url(../img/sb.jpg) no-repeat left top}
+.subnav #faceproduct{background:url(../img/sb.jpg) no-repeat left center}
+.subnav #lipsproduct{background:url(../img/sb.jpg) no-repeat left bottom}
+.sb-img{position:absolute;left:0px;bottom:0px;}
+#footer{height:32px;color:#fff;font:12px/32px 微软雅黑;text-align:center;}
+#footer .foot{/*width:360px;*/height:32px;margin:0 auto;}
+#footer .foot ul{ padding-left:30px;}
+#footer .foot li{float:left; padding-left:40px;color:#818181; font-size:11px;}
+#footer .foot li em{font-size:11px; color:#FFF; margin-right:5px;}
+#footer .foot li a{color:#818181;}
+#footer .foot li.search{padding:0; margin-top:5px;width:152px; height:19px;background:url(../img/search.jpg) no-repeat;}
+#footer .foot li.search .sm{text-indent:-9999px;width:19px;height:19px;background:transparent;cursor:pointer;}
+#footer .foot li.search input{border:0 none;float:left;margin-left:2px;}
+#footer .foot li.search .txt{width:115px;height:17px;margin:2px 0 0 2px;outline:none}
+#footer .fenxiang{float:left;height:32px;overflow:hidden;}
+#footer span{margin:0 5px;line-height:32px;float:left;}
+.fenxiang .fx{float:left;margin:8px 3px 0 3px;line-height:32px;font-size:0px;}
+.fx img{display:block;}
+#footer em{font:13px/32px arial;text-transform:uppercase;float:left;}
+.w30{width:30px;}
+.w50{width:50px;}
+.w80{width:80px;}
+.w100{width:100px;}
+.w150{width:150px;}
+.w200{width:200px;}
+.w230{width:230px;}
+.h100{height:100px;}
+.mg24{margin:24px;}
+.mgL25{margin-left:25px}
+.mgL70{margin-left:70px}
+.fl{float:left}
+.fr{float:right}
+.b{font-weight:bold;}
+p a.white{color:#fff;}
+.pointer{cursor:pointer}
+
+/*遮罩层*/
+#mask{position:absolute;z-index:998;top:0;left:0;background:#666;opacity:0.2;filter:alpha(opacity=0.2);}
+
+/*@招聘*/
+#recruitmentcontent{background:url('../img/recruitment_bg.png') no-repeat;height:655px;width:1024px;position:relative;}
+#recruitmentcontent .recruitmentBtn{padding-top:565px;margin-left:450px;cursor:pointer;}
+#recruitmentcontent .recruitment_btn{background:url(../img/btns.png) no-repeat 0 -41px;width:122px;height:39px;}
+#recruitmentcontent .recruitment_btn:hover{background:url(../img/btns.png) no-repeat 0 -1px;}
+#jobinformationcontent{background:url('../img/recruitment_bg2.png') no-repeat;height:655px;width:1024px;position:relative;}
+#jobinformationcontent .jobinformation_btn{background:url('../img/icons.png') no-repeat -48px 0;width:123px;height:30px;position:absolute;bottom:102px;left:65px;}
+#jobinformationcontent .jobpositionPanel{background:url('../img/jobposition_bg.png') repeat-x;width:1024px;height:102px;position:absolute;bottom:0;border-top:1px solid #666}
+#jobinformationcontent .jobpositionPanel .positionleft{background:url('../img/icons.png') no-repeat 2px -87px;width:22px;height:38px;margin:30px 57px 0 ;}
+#jobinformationcontent .jobpositionPanel .positionright{background:url('../img/icons.png') no-repeat -22px -87px;width:22px;height:38px;margin:30px 0 0 30px ;}
+#jobinformationcontent .jobpositionPanel .mgL25{margin-left:25px}
+#jobinformationcontent .jobpositionPanel .section{padding-top:20px;text-align:center;}
+#jobinformationcontent .jobpositionPanel .bd100{width:1px;height:100px;background:url('../img/line100.png')}
+#jobinformationcontent .jobpositionPanel p{text-align:left;margin:3px 0;}
+#jobinformationcontent .jobpositionPanel a{font-size:12px;font-family:"微软雅黑";color:#fff;}
+#jobinformationcontent .jobpositionPanel a:hover{color:#cc9966;}
+#jobinformationcontent #positionContent{overflow:hidden;width:777px;height:100px;float:left;overflow:hidden;}
+
+/*@寻找专柜*/
+#findcontent{background:url('../img/specialcounter_bg.png') no-repeat;height:655px;width:1024px;position:relative;}
+#findleft{width:690px;height:655px;float:left;}
+#findright {width:300px;height:655px;float:left;position:relative;}
+#findright p.findtitle1{font-size:21px;font-family:"微软雅黑";color:#cc9966;margin-top:60px;}
+#findright p.findtitle2{font-size:12px;font-family:"微软雅黑";color:#cccccc;margin-top:28px;}
+#findright select{width:72px;height:22px;}
+#findright .findselectarea{width:300px;height:27px;line-height:27px;position:absolute;top:133px;left:0;z-index:100;}
+#findright .findselectarea .btn{width:63px;height:27px;background:url(../img/find_btn.png) no-repeat;float:right;background-position:bottom;cursor:pointer;}
+#findright .arealist{width:300px;height:480px;background:url(../img/arealist_bg.png) repeat-x;padding-top:15px;position:absolute;top:160px;left:0}
+#findright .arealist .areasection{width:300px;height:85px;background:url(../img/area_bg1.png) no-repeat;margin:10px 0;padding-top:10px;padding-left:40px;cursor:pointer;}
+#findright .arealist .areasection p.countername{color:#cc9966;font-size:14px;font-family:"微软雅黑";}
+#findright .arealist .areasection p.counteraddress{color:#ffffff;font-size:12px;font-family:"微软雅黑";margin-top:15px;}
+#findright .arealist .areasection p.countertel{color:#ffffff;font-size:12px;font-family:"微软雅黑";}
+#findright .arealist .areapagenav{margin-top:20px;margin-left:80px;}
+#findright .arealist .areapagenav .current{width:10px;height:10px;background:url(../img/icons.png) no-repeat -472px -21px;cursor:pointer }
+.pagepoint{width:9px;height:10px;background:url(../img/icons.png) no-repeat -491px -21px;margin:0 5px;cursor:pointer}
+
+/*专柜 自定义下拉菜单*/
+.select_box{float:left;width:70px;font-size:12px;font-family:Arial, Helvetica, sans-serif;background:#fff;margin-right:5px;position:relative}
+.open_select_box{width:70px;position:relative;height:24px;}
+.open_select{float:left;width:70px;text-indent:10px;height:24px;line-height:24px;position:relative;cursor:pointer;background:url(../img/selecticon.png) no-repeat  55px 10px;}
+.select_list{width:70px;margin:0;border-top:none;display:none;box-shadow:0 0 4px rgba(0, 0, 0, 0.1);}
+.select_list li{text-align:left;height:20px;line-height:20px;cursor:pointer;width:100%;list-style-type:none;vertical-align:top;position:relative;}
+.h_bg{background:#f7f7f7;}
+.currency_type{text-indent:15px;}
+
+/*@网站地图*/
+#mapPanel{width:1024px;height:655px;background:url(../img/mairemap_bg.png) no-repeat;}
+#mapPanel p.maptitle{font-size:21px;font-family:"微软雅黑";color:#dbac5b;font-weight:600;padding-top:70px;padding-left:80px;}
+#mapPanel ul{margin-left:42px;margin-top:30px;}
+#mapPanel .list{width:147px;height:350px;background:url(../img/mairemap_bg2.png) no-repeat;margin:20px;text-align:center;}
+#mapPanel .list h3{width:146px;height:16px;font-size:16px;font-weight:500;font-family:"微软雅黑";color:#dbac5b}
+#mapPanel .list a{display:block;width:146px;height:14px;font-size:14px;font-weight:600;font-family:"微软雅黑";color:#fff;margin:40px 0}
+#mapPanel .list a:hover{text-decoration:underline}
+
+/*@联系我们*/
+#contactPanel{background:url(../img/contact_bg.png) no-repeat;width:1024px;height:655px;}
+#contactPanel #contactmap{background:url(../img/positionmap.png) no-repeat;width:278px;height:254px;float:left;margin:165px 0 0 120px;}
+#contactPanel #addressdetail{float:left;width:460px;height:254px;margin-top:165px;margin-left:40px;}
+#contactPanel #addressdetail p{font-family:"微软雅黑";font-size:26px;color:#dbac5b;font-weight:600;margin-bottom:25px;}
+#contactPanel #addressdetail h3{font-family:"微软雅黑";font-size:15px;color:#fff;font-weight:600;margin:15px 0}

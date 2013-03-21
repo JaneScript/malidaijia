@@ -1,0 +1,34 @@
+body{background:url(../img/bg.jpg) repeat-x;}
+.topwarp{width:1024px;height:687px;position:relative;margin:58px auto 0;}
+#section1{width:100%;height:100%;padding:1px;position:absolute;top:0;left:0;z-index:5;}
+#homenav{width:794px;height:36px;cursor:pointer;position:absolute;z-index:6;top:490px;left:115px;}
+#section2{width:100%;height:682px;background:url(../img/2.jpg) no-repeat 50% 0;position:relative;}
+#cover{position:absolute;left:0px;top:0px;width:1024px;height:682px;background:#000;opacity:.5;filter:Alpha(opacity=50);display:none;z-index:10;}
+.subnav01 a{background:url(../img/sb01.png) no-repeat;width:166px;height:105px;display:block;position:absolute;left:478px;top:30px;z-index:9;}
+.subnav01 a:hover{z-index:11;}
+.subnav01 img{width:167px;height:126px;}
+.subnav01 img{height:146px;}
+.subnav02 a{width:115px;height:146px;display:block;position:absolute;left:96px;top:100px;z-index:9;}
+.subnav03 a{background:url(../img/06.png) no-repeat;width:131px;height:102px;display:block;position:absolute;left:720px;top:175px;z-index:9;}
+.subnav03 a:hover{z-index:11;}
+.subnav03 img{width:156px;height:102px;}
+.subnav04 a{background:url(../img/04.png) no-repeat;width:147px;height:147px;display:block;position:absolute;left:170px;top:410px;z-index:9;}
+.subnav04 a:hover{z-index:11;}
+.subnav04 img{height:196px;width:147px;}
+.subnav05 a{background:url(../img/05.png) no-repeat;width:125px;height:141px;display:block;position:absolute;left:562px;top:485px;z-index:9;}
+.subnav05 a:hover{z-index:11;}
+.subnav05 img{height:141px;width:127px;}
+.subnav06 a{background:url(../img/07.png) no-repeat;width:155px;height:128px;display:block;position:absolute;left:670px;top:320px;z-index:9;}
+.subnav06 a:hover{z-index:11;}
+.subnav06 img{height:128px;width:153px;}
+.subnav07 a{background:url(../img/03.png) no-repeat;width:129px;height:102px;display:block;position:absolute;left:490px;top:285px;z-index:9;}
+#tinyvedio{position:absolute;left:211px;top:100px;background:url(../img/brandtinypic.jpg) no-repeat;width:0px;height:146px;}
+#exchangelink{position:absolute;left:317px;top:410px;width:0;height:147px;z-index:11;}
+#fanslink{position:absolute;left:687px;top:485px;width:0;height:141px;z-index:11;}
+#productlink{position:absolute;left:851px;top:175px;height:102px;width:0;z-index:11;}
+#collegelink{position:absolute;left:478px;top:135px;width:167px;height:0;z-index:11;}
+#artlink{position:absolute;left:825px;top:320px;width:0;height:128px;z-index:11;}
+
+
+
+

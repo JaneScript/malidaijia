@@ -1,0 +1,12 @@
+#slider{height:527px;overflow:hidden;position:relative;z-index:9;}
+#prev,#next{position:absolute;top:250px;width:25px;height:49px;cursor:pointer;}
+#prev{left:25px;background:url(../img/icons.png) no-repeat 0 -126px}
+#next{right:25px;background:url(../img/icons.png) no-repeat -25px -126px}
+#link{background:url(../img/linkbg.jpg) repeat-x;height:128px;width:1024px;}
+#link ul{padding-left:43px;}
+#link li{float:left;padding-top:41px;margin-right:65px;}
+#link .bd{padding-top:0px;margin-right:32px;}
+#link .l4{background:url(../img/product_l.png) no-repeat 0 -150px;width:174px;height:50px;}
+#link .l1{background:url(../img/product_l.png) no-repeat 0 0;width:146px;height:50px;}
+#link .l2{background:url(../img/product_l.png) no-repeat 0 -50px;width:146px;height:50px;}
+#link .l3{background:url(../img/product_l.png) no-repeat 0 -100px;width:146px;height:50px;}
