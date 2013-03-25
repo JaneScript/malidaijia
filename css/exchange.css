@@ -1,3 +1,4 @@
+html,body{-webkit-text-size-adjust:none;}
 #content{background:url(../img/exchange1.jpg) no-repeat;height:655px;}
 #page li{width:255px;height:655px;background-color:#0a0000;opacity:0.7;filter:alpha(opacity=70);float:left;margin-right:1px;color:#fff;overflow:hidden;position:relative;}
 #page .small{position:absolute;left:0px;top:0px;width:32px;height:655px;text-align:center;color:#fff;font:25px/655px arial;display:none;}

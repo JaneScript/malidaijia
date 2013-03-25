@@ -1,4 +1,5 @@
-﻿#content{background:black;height:655px;width:1024px;}
+﻿html,body{-webkit-text-size-adjust:none;}
+#content{background:black;height:655px;width:1024px;}
 #center{margin:0 auto;width:855px;}
 #down {height:215px;background:url(../img/brandup.png) no-repeat 0 -775px;clear:both;}
 .brand006{background:url(../img/brand006.png) no-repeat;height:285px;width:285px;}
