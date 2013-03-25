@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <title></title>
@@ -6,7 +6,8 @@
 <meta name="Keywords" content="" />
 <meta charset="utf-8" />
 <link rel="stylesheet" href="css/base.css" />
-<link rel="stylesheet" href="css/exchange.css" />
+<link rel="stylesheet" href="css/brand.css" />
+<link rel="stylesheet" href="css/jscrollPane.css" />
 </head>
 <body>
 <div id="logo">
@@ -57,13 +58,17 @@
 			</dl>
 		</div>
 	</div>
-	<div id="recuitmentPanel">
-		<p class="recuit_icon"></p>
+	<div id="recruitmentcontent">
+		<div class="recruitmentBtn">
+			<a href="jobinformation.html">
+				<div class="recruitment_btn"></div>
+			</a>
+		</div>
 	</div>
 	<div id="footer">
 		<div class="foot">
         <ul>
-        	<li style="padding:0;">&copy;2012 上海菲扬化妆品有限公司版权所有</li>
+        	<li style="padding-left:0">&copy;2012 上海菲扬化妆品有限公司版权所有</li>
             <li><a href="mairemap.html">网站导航</a></li>
             <li><a href="findcounter.html">查找专柜</a></li>
             <li><a href="contactus.html">联系我们</a></li>
@@ -77,12 +82,14 @@
 </div>
 </body>
 <script src="js/jquery-1.7.1.min.js"></script>
-<script src="js/jscrollpane.js"></script>
-<script src="js/curvycorners.src.js"></script>
 <script src="js/js.js"></script>
+
 <script>
-$(function(){
 	maire.initialize();
-	});
+	$('.recruitment_btn').hover(function(){
+		$(this).css('background-position','0 -1px');
+	},function(){
+		$(this).css('background-position','0 -41px');
+	})
 </script>
 </html>
