@@ -140,7 +140,7 @@ p a.white{color:#fff;}
 #mapPanel .list a:hover{text-decoration:underline}
 
 /*@联系我们*/
-#contactPanel{background:url(../img/contact_bg.png) no-repeat;width:1024px;height:655px;}
+#contactPanel{background:url(../img/contact_bg.jpg) no-repeat;width:1024px;height:655px;}
 #contactPanel #contactmap{background:url(../img/positionmap.png) no-repeat;width:278px;height:254px;float:left;margin:165px 0 0 120px;}
 #contactPanel #addressdetail{float:left;width:460px;height:254px;margin-top:165px;margin-left:40px;}
 #contactPanel #addressdetail p{font-family:"微软雅黑";font-size:26px;color:#dbac5b;font-weight:600;margin-bottom:25px;}
