@@ -189,9 +189,33 @@ p a.white{color:#fff;}
 .pagediv a{display:block;float:left;width:40px;text-align:center;height:100%;font:11px/25px "Microsoft YaHei";color:#888888;}
 .firstpage{margin-left:230px;}
 
+/*玛粉视频播放*/
+#fansvplayPanel{width:1024px;height:655px;background:#000;}
+.fansvplayleft{float:left;width:580px;height:635px;padding:10px 35px;}
+.fansvplayback{display:block;width:35px;height:18px;text-align:center;font:12px/18px "Microsoft YaHei";border:1px solid #352c29;color:#fff;letter-spacing:2px;}
+.fansvplayframe{border:1px solid #352c29;width:555px;height:310px;margin-top:20px;}
+.fansvplayclose{display:block;width:40px;height:22px;font:12px/26px "Calibri";color:#fff;text-align:right;margin-left:500px;}
+.fansvplayer{width:527px;height:276px;margin:0 auto;}
+.fansvplay_prointroheader{width:100%;height:40px;font:16px/40px "Microsoft YaHei";color:#fff;border-bottom:1px solid #352c29;margin-top:20px;}
+.fansvplay_proul{width:100%;margin-top:40px;}
+.fansvplay_proul li{width:110px;height:120px;margin:0 10px;float:left;}
+.fansvplay_proimg{width:68px;height:68px;border:1px solid #352c29;margin:0 auto 5px;}
+.fansvplay_proimg img{width:68px;height:68px;}
+.fansvplay_proname{font:12px/22px "Microsoft YaHei";color:#fff;text-align:center;}
+.fansvplay_purchase{display:block;font:12px/22px "Microsoft YaHei";color:#CF5198;text-align:center;}
 
-
-
-
-
+.fansvplayright{float:left;width:300px;height:465px;padding:135px 30px 55px;background:url(../img/fansvplaybg1.jpg) repeat-x;}
+.fansvpalyright_top{width:100%;height:137px;}
+.teacherheader{width:137px;height:100%;float:left;}
+.teacherheader img{width:100%;height:100%}
+.teacherdata{width:137px;height:100%;float:right;}
+.teachername{color:#CF5198;font:14px/20px "Microsoft YaHei";height:20px;margin-top:82px;}
+.teacherhonour{color:#c9c9ca;font:12px/16px "Microsoft YaHei";}
+.teacherdetail{margin-top:15px;width:100%;padding-top:15px;height:80px;overflow:auto;color:#c9c9ca;font:12px/16px "Microsoft YaHei";border-top:1px solid #909090;}
+.courserecommendheader{height:40px;font:16px/40px "Microsoft YaHei";color:#fff;border-bottom:1px solid #909090;}
+.courserecommendul{margin-top:40px;}
+.courserecommendul li{width:100px;height:120px;float:left;}
+.fansvplay_courseimg{width:68px;height:68px;margin:0 auto 5px;}
+.fansvplay_proimg img{width:68px;height:68px;}
+.fansvplay_coursename{font:12px/16px "Microsoft YaHei";color:#fff;text-align:center;}
 
