@@ -7,10 +7,19 @@
 #link ul{padding-left:43px;}
 #link li{float:left;padding-top:41px;margin-right:65px;}
 #link .bd{padding-top:0px;margin-right:32px;}
-#link .l4{background:url(../img/product_l.png) no-repeat 0 -150px;width:174px;height:50px;}
-#link .l1{background:url(../img/product_l.png) no-repeat 0 0;width:146px;height:50px;}
-#link .l2{background:url(../img/product_l.png) no-repeat 0 -50px;width:146px;height:50px;}
-#link .l3{background:url(../img/product_l.png) no-repeat 0 -100px;width:146px;height:50px;}
+#link .porlinkheader1{height:20px;font:16px/20px "Microsoft YaHei";color:#fff;text-align:left;}
+#link .porlinkheader2{height:20px;font:16px/20px "Calibri";color:#fff;text-align:left;}
+#link .l4{width:174px;height:50px;}
+.pro_mxleft{width:72px;height:50px;float:left;}
+.pro_mxright{width:92px;height:40px;float:left;padding:5px 0;margin-left:10px;}
+.pro_left{width:55px;height:50px;float:left;}
+.pro_right{width:81px;height:40px;float:left;padding:5px 0;margin-left:10px;}
+#link .l1{width:146px;height:50px;}
+#link .l1 img{width:55px;height:50px;}
+#link .l2{width:146px;height:50px;}
+#link .l2 img{width:55px;height:50px;}
+#link .l3{width:146px;height:50px;}
+#link .l3 img{width:55px;height:50px;}
 
 /*多米诺*/
 .contenttop{border-bottom:1px solid #575353;position:relative;}
