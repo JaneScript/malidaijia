@@ -105,12 +105,13 @@ p a.white{color:#fff;}
 #jobinformationcontent #positionContent{overflow:hidden;width:777px;height:100px;float:left;overflow:hidden;}
 
 /*@寻找专柜*/
-#findcontent{background:url('../img/specialcounter_bg.png') no-repeat;height:655px;width:1024px;position:relative;}
+#findcontent{background:url(../img/specialcounter_bg.jpg) no-repeat;height:655px;width:1024px;position:relative;}
 #findleft{width:690px;height:655px;float:left;}
 #findright {width:300px;height:655px;float:left;position:relative;}
 #findright p.findtitle1{font-size:21px;font-family:"微软雅黑";color:#cc9966;margin-top:60px;}
 #findright p.findtitle2{font-size:12px;font-family:"微软雅黑";color:#cccccc;margin-top:28px;}
-#findright select{width:72px;height:22px;}
+#findright select{width:70px;height:22px;}
+.findselect{width:70px;height:24px;float:left;margin-right:5px;}
 #findright .findselectarea{width:300px;height:27px;line-height:27px;position:absolute;top:133px;left:0;z-index:100;}
 #findright .findselectarea .btn{width:63px;height:27px;background:url(../img/find_btn.png) no-repeat;float:right;background-position:bottom;cursor:pointer;}
 #findright .arealist{width:300px;height:480px;background:url(../img/arealist_bg.png) repeat-x;padding-top:15px;position:absolute;top:160px;left:0}

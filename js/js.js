@@ -362,6 +362,7 @@ maire.exchange = {//交流
 }
 maire.findcounter = {//查询专柜页面
 	initialize : function(){
+		$('.chosenselect').chosen();
 		$('.recruitmentBtn img').hover(function(){//招聘按钮
 			$(this).attr('src','img/recruitment_btn1.png');
 		},function(){

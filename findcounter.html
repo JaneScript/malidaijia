@@ -8,7 +8,8 @@
 <link rel="stylesheet" href="css/base.css" />
 <link rel="stylesheet" href="css/brand.css" />
 <link rel="stylesheet" href="css/jscrollPane.css" />
-<link rel="stylesheet" href="css/colorbox.css">
+<link rel="stylesheet" href="css/chosen.css" />
+
 </head>
 <body>
 <div id="logo">
@@ -65,29 +66,26 @@
 			<p class="findtitle1">寻找您身边的玛丽黛佳专柜</p>
 			<p class="findtitle2">输入你要查找的城市或省份:</p>
 			<div class="findselectarea">
-				<div class="select_box">
-					<div class="open_select_box"><span class="open_select"  id="province_select">请选择</span></div>
-					<ul class="select_list">
-					   <li class="currency_type">AUD</li>
-					   <li class="currency_type">EUR</li>
-					</ul>
-					<input type="hidden"  class="province_txt" />
+				<div class="findselect">
+					<select class="chosenselect" name="province" id="selprovince" data-placeholder="请选择">
+						<option value=""></option>
+						<option value="1">1</option>
+						<option value="2">1</option>
+					</select>
 				</div>
-				<div class="select_box">
-					<div class="open_select_box"><span  class="open_select" id="city_select">请选择</span></div>
-					<ul class="select_list">
-					   <li class="currency_type">AUD</li>
-					   <li class="currency_type">EUR</li>
-					</ul>
-					<input type="hidden"  class="city_txt" />
+				<div class="findselect ">
+					<select class="chosenselect" name="city" id="selcity" data-placeholder="请选择">
+						<option value=""></option>
+						<option value="1">1</option>
+						<option value="2">1</option>
+					</select>
 				</div>
-				<div class="select_box">
-					<div class="open_select_box"><span  class="open_select" id="area_select">请选择</span></div>
-					<ul class="select_list">
-					   <li class="currency_type">AUD</li>
-					   <li class="currency_type">EUR</li>
-					</ul>
-					<input type="hidden"  class="area_txt" />
+				<div class="findselect ">
+					<select class="chosenselect" name="area" id="selarea" data-placeholder="请选择">
+						<option value=""></option>
+						<option value="1">1</option>
+						<option value="2">1</option>
+					</select>
 				</div>
 				<div class="btn fl"></div>
 			</div>
@@ -130,9 +128,10 @@
 <div></div>
 </body>
 <script src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/chosen.jquery.js"></script>
 <script src="js/js.js"></script>
 <script type="text/javascript">
-	maire.findcounter.initialize();
-	maire.selectUI();
+		maire.findcounter.initialize();
+		maire.selectUI();
 </script>
 </html>
