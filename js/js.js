@@ -363,6 +363,15 @@ maire.exchange = {//交流
 maire.findcounter = {//查询专柜页面
 	initialize : function(){
 		$('.chosenselect').chosen();
+		$('.provinceicon').hover(function(){
+			var $this = $(this);
+			h = $this.attr('h');
+			$(this).css('background','url(img/provincebg'+h+'a.png)')
+		},function(){
+			var $this = $(this);
+			h = $this.attr('h');
+			$(this).css('background','url(img/provincebg'+h+'.png)')
+		})
 		$('.recruitmentBtn img').hover(function(){//招聘按钮
 			$(this).attr('src','img/recruitment_btn1.png');
 		},function(){

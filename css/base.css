@@ -106,7 +106,76 @@ p a.white{color:#fff;}
 
 /*@寻找专柜*/
 #findcontent{background:url(../img/specialcounter_bg.jpg) no-repeat;height:655px;width:1024px;position:relative;}
-#findleft{width:690px;height:655px;float:left;}
+#findleft{width:690px;height:655px;float:left;position:relative;}
+.size8{width:101px;height:27px;padding-top:2px;background:url(../img/provincebg8.png);}
+.size7{width:81px;height:26px;padding-top:2px;background:url(../img/provincebg7.png);}
+.size3{width:43px;height:26px;padding-top:2px;background:url(../img/provincebg3.png);}
+.size2{width:39px;height:27px;padding-top:2px;background:url(../img/provincebg2.png);}
+.hidden{visibility:hidden;}
+.provinceicon{display:block;position:absolute;text-decoration:none;color:#000;font:10px "Microsoft YaHei";text-align:center;}
+#findleft .provinceiconhover{}
+.top140{top:140px;}
+.top180{top:180px;}
+.top210{top:210px;}
+.top220{top:220px;}
+.top230{top:230px;}
+.top240{top:240px;}
+.top250{top:250px;}
+.top260{top:260px;}
+.top270{top:270px;}
+.top280{top:280px;}
+.top290{top:290px;}
+.top300{top:300px;}
+.top310{top:310px;}
+.top320{top:320px;}
+.top330{top:330px;}
+.top340{top:340px;}
+.top350{top:350px;}
+.top360{top:360px;}
+.top370{top:370px;}
+.top380{top:380px;}
+.top390{top:390px;}
+.top400{top:400px;}
+.top410{top:410px;}
+.top420{top:420px;}
+.top430{top:430px;}
+.top440{top:440px;}
+.top450{top:450px;}
+.top460{top:460px;}
+.top470{top:470px;}
+.top480{top:480px;}
+.top490{top:490px;}
+.top500{top:500px;}
+.top510{top:510px;}
+.top520{top:520px;}
+.left130{left:130px;}
+.left260{left:260px;}
+.left250{left:250px;}
+.left310{left:310px;}
+.left320{left:320px;}
+.left330{left:330px;}
+.left340{left:340px;}
+.left350{left:350px;}
+.left360{left:360px;}
+.left370{left:370px;}
+.left380{left:380px;}
+.left390{left:390px;}
+.left400{left:400px;}
+.left410{left:410px;}
+.left420{left:420px;}
+.left430{left:430px;}
+.left440{left:440px;}
+.left450{left:450px;}
+.left460{left:460px;}
+.left470{left:470px;}
+.left480{left:480px;}
+.left490{left:490px;}
+.left500{left:500px;}
+.left510{left:510px;}
+.left520{left:520px;}
+.left530{left:530px;}
+.left560{left:560px;}
+
 #findright {width:300px;height:655px;float:left;position:relative;}
 #findright p.findtitle1{font-size:21px;font-family:"微软雅黑";color:#cc9966;margin-top:60px;}
 #findright p.findtitle2{font-size:12px;font-family:"微软雅黑";color:#cccccc;margin-top:28px;}
