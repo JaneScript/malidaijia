@@ -167,6 +167,15 @@ p a.white{color:#fff;}
 /*招聘*/
 #recuitmentPanel{background:url(../img/recuit_bg.jpg) no-repeat;width:1024px;height:655px;position:relative;}
 .recuit_icon{position:absolute;top:0;left:30px;width:380px;height:655px;background:url(../img/recuit_icon.png) no-repeat;}
+.recuitbg{width:505px;position:absolute;height:360px;overflow:hidden;bottom:0;left:440px;}
+
+
+
+
+
+
+
+
 
 /*资讯*/
 #infomationPanel{background:#000;width:1024px;height:655px;}

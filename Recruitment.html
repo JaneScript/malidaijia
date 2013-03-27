@@ -6,7 +6,7 @@
 <meta name="Keywords" content="" />
 <meta charset="utf-8" />
 <link rel="stylesheet" href="css/base.css" />
-<link rel="stylesheet" href="css/exchange.css" />
+<link rel="stylesheet" href="css/jscrollPane2.css" />
 </head>
 <body>
 <div id="logo">
@@ -59,6 +59,42 @@
 	</div>
 	<div id="recuitmentPanel">
 		<p class="recuit_icon"></p>
+		<div class="recuitbg">
+			<div id="Scrollbar-Container"> 
+				<div class="Scrollbar-Track">
+					<img src="img/scrollbar.jpg" class="Scrollbar-Handle" />
+				</div>
+			</div>
+			<div class="Container">
+				<div id="Scroller-1">
+					<div class="Scroller-Container">			
+						<div class="func_col" style="padding-top:300px;width:503px;height:558px;background:url(img/recuitbg2.jpg) no-repeat 0 0">
+							<p class="selectablep">全部</p>
+							<p class="selectedbtn selectablep">保湿补水</p>
+							<p class="selectablep">修纹抗皱</p>
+							<p class="selectablep">卸妆</p>
+							<p class="selectablep">均匀肤色</p>
+							<p class="selectablep">抗红血丝</p>
+							<p class="selectablep">控油平衡</p>
+							<p class="selectablep">提亮肤色</p>
+							<p class="selectablep">提拉紧致</p>
+							<p class="selectablep">清理黑头</p>
+							<p class="selectablep">眼部护理</p>
+							<p class="selectablep">去除角质</p>
+							<p class="selectablep">细致毛孔</p>
+							<p class="selectablep">美白/祛印</p>
+							<p class="selectablep">美白/祛斑</p>
+							<p class="selectablep">美白/祛斑</p>
+							<p class="selectablep">舒缓敏感</p>
+							<p class="selectablep">调理肌肤</p>
+							<p class="selectablep">防晒隔离</p>
+							<p class="selectablep">面部清洁</p>
+							<p class="selectablep">预防老化</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div id="footer">
 		<div class="foot">
@@ -77,12 +113,24 @@
 </div>
 </body>
 <script src="js/jquery-1.7.1.min.js"></script>
-<script src="js/jscrollpane.js"></script>
+<script type="text/javascript" src="js/Scrolling.Scroller.js"></script>
+<script type="text/javascript" src="js/Scrolling.Scrollbar.js"></script>
+<script type="text/javascript" src="js/Scrolling.ScrollTween.js"></script>
+<script type="text/javascript" src="js/jscrollpane1.js"></script>
 <script src="js/curvycorners.src.js"></script>
 <script src="js/js.js"></script>
+<script type="text/javascript">
+		var scroller  = null;
+		var scrollbar = null;
+		window.onload = function () {
+		  scroller  = new Scrolling.Scroller(document.getElementById("Scroller-1"), 400, 200);
+		  scrollbar = new Scrolling.Scrollbar(document.getElementById("Scrollbar-Container"), scroller, new Scrolling.ScrollTween());
+		}
+	</script>
 <script>
 $(function(){
 	maire.initialize();
+	$(".nano").nanoScroller({alwaysVisible: true});
 	});
 </script>
 </html>
