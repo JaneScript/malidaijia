@@ -168,11 +168,14 @@ p a.white{color:#fff;}
 #recuitmentPanel{background:url(../img/recuit_bg.jpg) no-repeat;width:1024px;height:655px;position:relative;}
 .recuit_icon{position:absolute;top:0;left:30px;width:380px;height:655px;background:url(../img/recuit_icon.png) no-repeat;}
 .recuitbg{width:505px;position:absolute;height:360px;overflow:hidden;bottom:0;left:440px;}
-
-
-
-
-
+.positiondiv{padding:300px 20px 0;width:465px;height:558px;background:url(../img/recuitbg2.jpg) no-repeat 0 0}
+.positiondiv1{width:100%;height:300px;}
+.positiondivleft{width:180px;height:100%;float:left;margin-right:30px;}
+.positiondivright{width:180px;height:100%;float:left}
+.positiondivheader{width:100%;height:36px;border-bottom:1px solid #96784c;line-height:36px;color:#fff;font:15px/36px "Microsoft YaHei";margin-bottom:20px;}
+.positiondivrequired{width:100%;height:36px;line-height:36px;color:#fff;font:15px/36px "Microsoft YaHei";}
+.positiondivpage{width:220px;height:24px;margin-left:200px;}
+.positiondivpage a{width:40px;height:100%;border:1px solid #96784c;display:block;float:left;margin:0 5px;font:12px/22px "Microsoft YaHei";text-align:center;text-decoration:none;color:#fff;}
 
 
 
