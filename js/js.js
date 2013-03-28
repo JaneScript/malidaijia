@@ -1,4 +1,5 @@
 var t = 0;
+var pici = 0;
 var maire = {//玛丽黛佳 全局方法
 	curvycorners : function(){//圆角
 		curvyCorners.addEvent(window, 'load', initCorners);
@@ -189,33 +190,19 @@ maire.brand.mark = {//品牌印记
 	}
 }
 maire.brand.fans = {//品牌玛粉
+	picShow : function(x){
+		var $fanspic = $('.fans');
+		$fanspic.children().eq(x).fadeIn(2000);
+		$fanspic.children().eq(x).fadeOut(2000);
+	},
 	fadeShow : function(){//淡入淡出效果
-		$('.aaa').fadeIn("slow");
-		setTimeout(function(){$('.bbb').fadeIn("slow");},1000);
-		setTimeout(function(){$('.ccc').fadeIn("slow");},2000);
-		setTimeout(function(){$('.fans img').fadeOut("slow");},4000);
-		setInterval(function(){
-			t++;
-			if(t%2==0){
-				$('.aaa').attr('src','img/fans1.png');
-				$('.bbb').attr('src','img/fans2.png');
-				$('.ccc').attr('src','img/fans3.png');
-				$('.aaa').fadeIn("slow");
-				setTimeout(function(){$('.bbb').fadeIn("slow");},1000);
-				setTimeout(function(){$('.ccc').fadeIn("slow");},2000);
-				setTimeout(function(){$('.fans img').fadeOut("slow");},5000);
-			}else{
-				$('.aaa').attr('src','img/fans4.png');
-				$('.bbb').attr('src','img/fans5.png');
-				$('.ccc').attr('src','img/fans6.png');
-				$('.aaa').fadeIn("slow");
-				setTimeout(function(){$('.bbb').fadeIn("slow");},1000);
-				setTimeout(function(){$('.ccc').fadeIn("slow");},2000);
-				setTimeout(function(){$('.fans img').fadeOut("slow");},5000);
-			}	
-		},6000);	
+		var _this = this;
+		var $fanspic = $('.fans');
+		var imglength = $fanspic.children().length;
+		if(pici==imglength) pici=0;
+		_this.picShow(pici);
+		pici++;
 	}
-	
 }
 maire.exchange = {//交流
 	slider : function(main){

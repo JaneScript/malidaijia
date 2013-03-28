@@ -64,9 +64,8 @@
 			</div>
 			<div id="main">
 				<div class="fl fans">
-					<a calss="imgL"><img class="aaa" src="img/fans1.png" style="display:none"/></a>
-					<a calss="imgC"><img class="bbb" src="img/fans2.png" style="display:none"/></a>
-					<a calss="imgR"><img class="ccc" src="img/fans3.png" style="display:none"/></a>
+					<img class="fan1 hide" src="img/fan1.png" alt="" />
+					<img class="fan2 hide" src="img/fan2.png" alt="" />
 				</div>
 				<div class="fl fansArticle" style="cursor:default">
 					<div class="contentDiv">
@@ -159,6 +158,7 @@
 $(function(){
 	maire.initialize();
 	maire.brand.fans.fadeShow();
+	setInterval(function(){maire.brand.fans.fadeShow();},5000);
 	$('.founder').fadeTo(3000,1)	
     $(".nano").nanoScroller({alwaysVisible:true});
 });
