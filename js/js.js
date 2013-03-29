@@ -291,7 +291,7 @@ maire.exchange = {//交流
 		var _this = this;
 		//_this.initNews();//根据新闻数量控制向上向下箭头的隐藏/显示
 		$('.exchangeNewsPanel a').click(_this.newsOpen);//点击新闻事件
-		$('.li-right .more').click(_this.newsPanelShow);//点击“更多”打开新闻面板
+		//$('.li-right .more').click(_this.newsPanelShow);//点击“更多”打开新闻面板
 		$('.exchangeNewsPanel').click(function(event){//阻止冒泡
 			event.stopPropagation();
 			event.preventDefault();
