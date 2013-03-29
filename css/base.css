@@ -301,3 +301,27 @@ p a.white{color:#fff;}
 .fansvplay_proimg img{width:68px;height:68px;}
 .fansvplay_coursename{font:12px/16px "Microsoft YaHei";color:#fff;text-align:center;}
 
+/*版权声明*/
+#copyrightPanel{width:1024px;height:655px;background:url(../img/copyright_bg.jpg) no-repeat;}
+.copyrightdiv{width:764px;height:505px;padding:100px 130px 50px 130px;}
+.crdleft{width:144px;height:100%;float:left;}
+.crdleftp1{width:100%;height:30px;font:17px/30px "Microsoft YaHei";color:#9FA0A0;margin-bottom:20px;}
+.crdleftp2{width:100%;height:30px;font:14px/30px "Microsoft YaHei";}
+.crdleft .crdleftp2 a{color:#9FA0A0;}
+.crdleft .crdleftp2 .hoverp{color:#fff}
+.crdbd{width:1px;height:100%;margin-right:30px;float:left;background:url(../img/copyright_bd.png) no-repeat 0 0;}
+.crdright{width:580px;height:100%;float:right;}
+.crdrightp{font:12px/26px "Microsoft YaHei";color:#DCDDDD;}
+.crdright .f15{font-size:15px;}
+.mt20{margin-top:20px;}
+
+
+
+
+
+
+
+
+
+
+
