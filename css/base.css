@@ -315,6 +315,41 @@ p a.white{color:#fff;}
 .crdright .f15{font-size:15px;}
 .mt20{margin-top:20px;}
 
+/*登陆*/
+#loginPanel{width:1024px;height:655px;background:url(../img/log_bg.jpg) no-repeat;}
+.logform{width:374px;height:200px;padding:227px 325px;}
+.logheader{font:21px/30px "Microsoft YaHei";height:30px;color:#dbac5b;margin-bottom:20px;}
+.logitem{width:364px;height:24px;line-height:24px;margin:15px 0 15px 10px;}
+label{font:12px/24px "Microsoft YaHei";color:#fff;display:inline-block;width:60px;letter-spacing:2px;}
+.input1{width:215px;height:24px;border:0;outline:none;background:#b9b9b9;padding-left:5px;line-height:24px;}
+.toregist{color:#8b8b8b;font:12px/24px "Microsoft YaHei";}
+.logbtns{width:146px;height:26px;margin:40px auto 0;}
+.logbtns p{width:61px;height:100%;cursor:pointer;background:url(../img/btnbg.png) no-repeat;text-align:center;font:12px/26px "Microsoft YaHei";color:#fff;}
+.logbtns .hoverbtn{background:url(../img/btnbg1.png) no-repeat;}
+.submit{float:left;}
+.reset{float:right;}
+
+/*注册*/
+#registPanel{width:1024px;height:655px;background:url(../img/log_bg.jpg) no-repeat;}
+#registPanel label{width:80px;}
+.registform{width:574px;height:495px;padding:80px 225px;}
+.registheader{font:21px/30px "Microsoft YaHei";height:30px;color:#dbac5b;}
+.registheader1{font:12px/24px "Microsoft YaHei";height:24px;color:#fff;}
+.setpsdtip{font:10px/12px "Microsoft YaHei";color:#8b8b8b;display:inline-block;height:26px;vertical-align:bottom;*vertical-align:top;}
+.registitem{width:564px;height:26px;line-height:26px;margin:15px 0 15px 10px;}
+.setmailtip{font:10px/26px "Microsoft YaHei";color:#8b8b8b;display:inline-block;height:26px;}
+.birthtext{font:12px/24px "Microsoft YaHei";color:#fff;vertical-align:top;}
+.registheader2{font:10px/26px "Microsoft YaHei";color:#8b8b8b;margin-left:10px;}
+#registPanel .chosenselect{width:74px;height:24px;padding:0;}
+
+
+
+
+
+
+
+
+
 
 
 

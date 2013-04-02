@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title></title>
@@ -6,8 +6,7 @@
 <meta name="Keywords" content="" />
 <meta charset="utf-8" />
 <link rel="stylesheet" href="css/base.css" />
-<link rel="stylesheet" href="css/brand.css" />
-<link rel="stylesheet" href="css/jscrollPane.css" />
+<link rel="stylesheet" href="css/exchange.css" />
 </head>
 <body>
 <div id="logo">
@@ -24,13 +23,13 @@
 <div class="box">
 	<div id="nav">
 		<ul>
-		<li class="current"><a href="brandfounder.html" title="">BRAND 品牌</a><span>|</span></li>
-		<li id="product"><a href="product.html" title="">PRODUCT 产品</a><span>|</span></li>
-		<li><a href="exchange.html" title="">COLOUR 玩转色彩</a><span>|</span></li>
-		<li><a href="" title="">ARTISTIC 玩转艺术</a><span>|</span></li>
-		<li><a href="" title="">CLASS 玛粉学院</a><span>|</span></li>
-		<li><a href="" title="">M'FANS 玛粉社</a><span>|</span></li>
-		<li><a href="" title="">NEW'S 资讯</a><span>|</span></li>
+			<li class="current"><a href="brandfounder.html" title="">BRAND 品牌</a><span>|</span></li>
+			<li id="product"><a href="product.html" title="">PRODUCT 产品</a><span>|</span></li>
+			<li><a href="" title="">COLOUR 玩转色彩</a><span>|</span></li>
+			<li><a href="exchange.html" title="">ARTISTIC 玩转艺术</a><span>|</span></li>
+			<li><a href="college.html" title="">CLASS 玛粉学院</a><span>|</span></li>
+			<li><a href="" title="">M'FANS 玛粉社</a><span>|</span></li>
+			<li><a href="infomation.html" title="">NEW'S 资讯</a><span>|</span></li>
 		</ul>
 		<div id="pop">
 			<dl class="subnav">
@@ -58,17 +57,29 @@
 			</dl>
 		</div>
 	</div>
-	<div id="recruitmentcontent">
-		<div class="recruitmentBtn">
-			<a href="jobinformation.html">
-				<div class="recruitment_btn"></div>
-			</a>
+	<div id="loginPanel">
+		<div class="logform">
+			<p class="logheader">用户登陆</p>
+			<div class="logitem">
+				<label for="">用&nbsp;户&nbsp;名</label>
+				<input type="text" class="input1" />
+				<a href="regist.html" class="toregist">点击注册</a>
+			</div>
+			<div class="logitem">
+				<label for="">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+				<input type="password" class="input1" />
+				<a href="" class="toregist">忘记密码？</a>
+			</div>
+			<div class="logbtns">
+				<p class="submit">提交</p>
+				<p class="reset">重置</p>
+			</div>
 		</div>
 	</div>
 	<div id="footer">
 		<div class="foot">
         <ul>
-        	<li style="padding-left:0">&copy;2012 上海菲扬化妆品有限公司版权所有</li>
+        	<li style="padding:0;">&copy;2012 上海菲扬化妆品有限公司版权所有</li>
             <li><a href="mairemap.html">网站导航</a></li>
             <li><a href="findcounter.html">查找专柜</a></li>
             <li><a href="contactus.html">联系我们</a></li>
@@ -82,14 +93,13 @@
 </div>
 </body>
 <script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jscrollpane.js"></script>
+<script src="js/curvycorners.src.js"></script>
 <script src="js/js.js"></script>
-
 <script>
+$(function(){
 	maire.initialize();
-	$('.recruitment_btn').hover(function(){
-		$(this).css('background-position','0 -1px');
-	},function(){
-		$(this).css('background-position','0 -41px');
-	})
+	maire.login.initialize();
+	});
 </script>
 </html>

@@ -395,3 +395,23 @@ maire.college = {//玛粉学院
 		$('.content dt').click(this.videoplay);	
 	}
 }
+maire.login = {
+	initialize : function(){
+		$('.logbtns p').hover(function(){
+			$(this).addClass('hoverbtn');
+		},function(){
+			$(this).removeClass('hoverbtn');
+		})
+	}
+}
+maire.regist = {
+	initialize : function(){
+		$('.logbtns p').hover(function(){
+			$(this).addClass('hoverbtn');
+		},function(){
+			$(this).removeClass('hoverbtn');
+		});
+		
+		$('.chosenselect').chosen();
+	}
+}
