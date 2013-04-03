@@ -79,7 +79,7 @@ maire.homePage = {//玛丽黛佳首页
 	$("#homenav").mouseover(function(){
 		scroll();
 	});
-	$('.subnav02 a').hover(function(){//滑出小视频
+	$('.subnav02').hover(function(){//滑出小视频
 		var tinyvideo = $('#tiny').val();
 		$(this).css('z-index',11)
 		$('#cover').show();
