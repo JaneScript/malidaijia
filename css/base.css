@@ -222,14 +222,17 @@ p a.white{color:#fff;}
 .c1{color:#CF5298}
 .c2{color:#009FE8}
 .c3{color:#E95513}
-.fansvideobody{background:url(../img/fansvideo_bg.jpg) repeat-x 0 50%;width:100%;height:1860px;}
+.fansvideobody{background:url(../img/fansvideo_bg.jpg) repeat 0 50%;width:100%;min-height:800px;}
 .fansvideobody #content{width:1024px;height:100%;margin:0 auto;}
-.fasv_part{height:620px;width:100%;}
-.fansv_header1{width:100%;height:120px;background:url(../img/fansvheader1.jpg) no-repeat;}
-.fansv_header2{width:100%;height:120px;background:url(../img/fansvheader2.jpg) no-repeat;}
-.fansv_header3{width:100%;height:120px;background:url(../img/fansvheader3.jpg) no-repeat;}
-.fanv_con{width:972;height:430px;padding:35px 26px;background:#211f1f;}
-.fansv_ul{width:100%;height:100%;}
+.fasv_part{width:100%;height:auto}
+.fansv_header1{width:100%;height:120px;}
+.fansv_header1 img{width:100%;height:100%;}
+.fansv_header2{width:100%;height:120px;}
+.fansv_header2 img{width:100%;height:100%;}
+.fansv_header3{width:100%;height:120px;}
+.fansv_header3 img{width:100%;height:100%;}
+.fanv_con{width:972px;height:auto;padding:35px 26px;background:#211f1f;}
+.fansv_ul{width:100%;}
 .fansv_ul li{float:left;width:225px;height:215px;margin:0 9px;}
 .fansv_frame{width:223px;height:163px;border:1px solid #707070;}
 .fansv_name{width:100%;padding:15px 0;font:12px "微软雅黑";text-align:center;color:#fff;}

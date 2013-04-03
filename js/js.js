@@ -395,7 +395,17 @@ maire.college = {//玛粉学院
 		$('.content dt').click(this.videoplay);	
 	}
 }
-maire.login = {
+maire.fansvideo = {
+	initialize : function(){
+		$('.fanv_con').children().each(function(){
+			var $this = $(this);
+			var length = $this.children().length;
+			var h = Math.ceil(length/4)*230;
+			$this.height(h);
+		})
+	}
+}
+maire.login = {//登陆
 	initialize : function(){
 		$('.logbtns p').hover(function(){
 			$(this).addClass('hoverbtn');
