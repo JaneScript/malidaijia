@@ -63,7 +63,7 @@
 		<div id="center">
 			<div id="markup"></div>
 			<div id="main">
-				<div class="fl story pointer" >
+				<div class="fl story pointer svideo" >
 					<embed style="display:none;margin-top:30px;" src="playVideoA-1.swf" width="284" height="220" type="application/x-shockwave-flash"></embed>
 				</div>
 				<div class="fl markArticle">
@@ -157,7 +157,6 @@
 		</div>
 	</div>
 </div>
-<input type="hidden" value="playVideoA-2.swf" id="vedioname"/>
 </body>
 <script src="js/jquery-1.7.1.min.js"></script>
 <script src="js/jscrollpane.js"></script>
@@ -166,8 +165,8 @@
 <script>
 	maire.initialize();
 	maire.curvycorners();
-	maire.brand.BigFlashPlayer();
-	maire.brand.mark.yearPage();
+	maire.brand.BigFlashPlayer('A-2.flv','A-1.flv');
+	maire.brand.mark.yearPage(["2006", "2007", "2008", "2010", "11-4", "11-6", "11-7"]);
 	$(".nano").nanoScroller({alwaysVisible:true});//自定义滚动条	
 </script>
 </html>

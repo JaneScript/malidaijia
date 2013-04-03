@@ -39,9 +39,10 @@
 .philosophyArticle .article p{font-family:"幼圆";font-size:12px;text-align:center;height:15px;margin:3px 0;}
 /*创始人*/
 #founderup{height:155px;background:url(../img/brandup.png) no-repeat  0 0;margin-bottom:2px;}
-.founder{height:285px;width:285px;opacity:0;filter:alpha(opacity=0);}
+.founder{height:285px;width:285px;}
 .founderArticle{background:url(../img/brand005.png) no-repeat;height:285px;width:285px;position:relative}
 .founderArticle .article p{font-family:"幼圆";font-size:12px;text-align:center;height:15px;margin:3px 0;}
+.picdiv img{width:284px;height:284px;}
 /*印记*/
 #markup {height:155px;background:url(../img/brandup.png) no-repeat 0 -310px;margin-bottom:2px;}
 .markArticle{background:url(../img/brand005.png) no-repeat;height:285px;width:285px;position:relative}

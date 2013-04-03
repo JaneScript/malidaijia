@@ -63,7 +63,7 @@
 			<div id="philosophyup">
 			</div>
 			<div id="main">
-				<div class="fl story pointer">
+				<div class="fl story pointer svideo">
 					<embed style="display:none;margin-top:30px;" src="playVideoB-1.swf" width="284" height="220" type="application/x-shockwave-flash"></embed>
 				</div>
 				<div class="fl philosophyArticle">
@@ -139,7 +139,6 @@
 		</div>
 	</div>
 </div>
-<input type="hidden" value="playVideoB-2.swf" id="vedioname"/>
 </body>
 <script src="js/jquery-1.7.1.min.js"></script>
 <script src="js/jscrollpane.js"></script>
@@ -149,7 +148,7 @@
 <script>
 $(function(){
 	maire.initialize();	
-	maire.brand.BigFlashPlayer();
+	maire.brand.BigFlashPlayer('B-2.flv','B-1.flv');
 	$(".nano").nanoScroller({alwaysVisible:true});//自定义滚动条
 	maire.curvycorners();//圆角
 });

@@ -62,8 +62,8 @@
 		<div id="center">
 			<div id="founderup"></div>
 			<div id="main">
-				<div class="fl founder">
-					<img id="founderImg" src="img/brandfounder.png"/>
+				<div class="fl founder picdiv">
+					<img class="hide" src="img/brandfounder.png"/>
 				</div>
 				<div class="fl founderArticle">
 					<div class="contentDiv">
@@ -152,7 +152,8 @@
 <script type="text/javascript">
 $(function(){
 	maire.initialize();
-	$('.founder').fadeTo(3000,1)	
+	maire.brand.fans.fadeShow();	
+	setInterval(function(){maire.brand.fans.fadeShow();},5000);
     $(".nano").nanoScroller({alwaysVisible:true});
 });
 </script>

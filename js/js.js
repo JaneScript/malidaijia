@@ -131,15 +131,17 @@ maire.homePage = {//玛丽黛佳首页
 	}
 }
 maire.brand = {	//品牌页面
-	playerClose : function(){//关闭大视频窗口
+	playerClose : function(sv){//关闭大视频窗口
 		var $player = $('.playerPanel');
+		var src = $('#svideoname').val();
 		$player.hide();
 		setTimeout(function(){
-			$player.remove();	
-			$('.story embed').show();
-			},500,function(){alert(111)});
+			$player.remove();
+			$('.svideo embed').attr('src','playVideoA-1.swf?v='+sv+'');
+			$('.svideo embed').show();
+			},500);
 		},
-	BigFlashPlayer : function(){//大视频窗口打开
+	BigFlashPlayer : function(bv,sv){//大视频窗口打开
 		var _this = this;
 		var winW = document.body.clientWidth;
 		var winH = document.body.clientHeight; 
@@ -147,42 +149,54 @@ maire.brand = {	//品牌页面
 		var vedio = $('#vedioname').val();//隐藏域获取视频文件名
 		var $player = $('.playerPanel');
 		var $playerCloseBtn = $('.playerPanel span');
-		$('#center').append('<div class="playerPanel" style="position:absolute;width:855px;height:550px;top:130px;left:'+left+'px;background:#000;"><p style="text-align:right;height:20px;";><span style="margin-right:10px;line-height:20px;font-size:12px;color:#fff;cursor:pointer"><img src="img/close.png" /></span></p><div class="player" style="width:855px;height:510px;display:none;"><embed src='+vedio+' width="854" height="510" type="application/x-shockwave-flash"></embed></div><p style="height:20px;"></p></div>')
+		$('#center').append('<div class="playerPanel" style="position:absolute;width:855px;height:550px;top:130px;left:'+left+'px;background:#000;"><p style="text-align:right;height:20px;";><span style="margin-right:10px;line-height:20px;font-size:12px;color:#fff;cursor:pointer"><img src="img/close.png" /></span></p><div class="player" style="width:855px;height:510px;display:none;"><embed src=playVideoA-2.swf?v='+vedio+' width="854" height="510" type="application/x-shockwave-flash"></embed></div><p style="height:20px;"></p></div>')
 		var $playerDiv = $('.player');
 		$playerDiv.show(1000);
-		$playerCloseBtn.live('click',_this.playerClose);
+		$playerCloseBtn.live('click',function(){
+			_this.playerClose.call(this,sv)
+		});
 	}
-	
+	/*initialize : function(){
+		var src = $('#svideoname').val();
+		var html = '';
+			html +='<embed style="display:none;margin-top:30px;" src="'+src+'" width="284" height="220" type="application/x-shockwave-flash"></embed>'
+		$('.svideo').append(html);
+	}*/
 }
 maire.brand.mark = {//品牌印记
-	yearPage : function(){//年份翻动
-		var sx = ['2006','2008','2009','2011','2012'];
+	yearPage : function(timeArray){//年份翻动
 		var i=0;
 		var h=$(".textDiv li").height();
-		var len=$(".textDiv li").length;
+		var len=timeArray.length;
 		$(".downarrow").click(function(){
-			var nowY = $('.nextYear').html();
-			var index = sx.indexOf(nowY)*1;
-			console.log(nowY)
-			console.log(index)
+			var previ = timeArray.indexOf($('.prevYear').html());
+			var nexti = timeArray.indexOf($('.nextYear').html());
 			i--;
-			if(i >= -(len - 1) ){
-			$('.prevYear').html(sx[index]);
-			$('.nextYear').html(sx[index+1]);
+			if(i > -(len-1)){
+				$('.prevYear').html(timeArray[previ+1]);
+				$('.nextYear').html(timeArray[nexti+1]);
+			}else if(i==-(len-1)){
+				$('.prevYear').html(timeArray[previ+1]);
+				$('.nextYear').hide();
+				$('.downarrow').hide();
 			}
 			i = Math.max(-(len-1), i);
 			var dis=i*h;
 			var mt = $(".textDiv ul").css('margin-top');
-			$(".textDiv ul").animate({"margin-top":dis});	
+			$(".textDiv ul").animate({"margin-top":dis});
 		});
 		$(".uparrow").click(function(){
-			var nowY = $('.prevYear').html();
-			var index = sx.indexOf(nowY)*1;
-			i++;
-			if(i<1){
-			$('.prevYear').html(sx[index-1]);
-			$('.nextYear').html(sx[index]);
+			var previ = timeArray.indexOf($('.prevYear').html());
+			var nexti = timeArray.indexOf($('.nextYear').html());
+			if(i<0&&i!=-(len-1)){
+				$('.prevYear').html(timeArray[previ-1]);
+				$('.nextYear').html(timeArray[nexti-1]);
+			}else if(i==-(len-1)){
+				$('.nextYear').show();
+				$('.downarrow').show();
+				$('.prevYear').html(timeArray[previ-1]);
 			}
+			i++;
 			i = Math.min(0, i);
 			var dis=i*h;
 			$(".textDiv ul").animate({"margin-top":dis})
@@ -191,17 +205,21 @@ maire.brand.mark = {//品牌印记
 }
 maire.brand.fans = {//品牌玛粉
 	picShow : function(x){
-		var $fanspic = $('.fans');
-		$fanspic.children().eq(x).fadeIn(2000);
-		$fanspic.children().eq(x).fadeOut(2000);
+		var $picdiv = $('.picdiv');
+		$picdiv.children().eq(x).fadeIn(2000);
+		$picdiv.children().eq(x).fadeOut(2000);
 	},
 	fadeShow : function(){//淡入淡出效果
 		var _this = this;
-		var $fanspic = $('.fans');
-		var imglength = $fanspic.children().length;
-		if(pici==imglength) pici=0;
-		_this.picShow(pici);
-		pici++;
+		var $picdiv = $('.picdiv');
+		var imglength = $picdiv.children().length;
+		if(imglength==1){
+			$picdiv.children().fadeIn(2000);
+		}else{
+			if(pici==imglength) pici=0;
+			_this.picShow(pici);
+			pici++;
+		}
 	}
 }
 maire.exchange = {//交流
