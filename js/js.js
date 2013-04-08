@@ -152,12 +152,12 @@ maire.homePage = {//玛丽黛佳首页
 maire.brand = {	//品牌页面
 	playerClose : function(sv){//关闭大视频窗口
 		var $player = $('.playerPanel');
-		var src = $('#svideoname').val();
+		//var src = $('#svideoname').val();
 		$player.hide();
 		setTimeout(function(){
 			$player.remove();
-			$('.svideo embed').attr('src','p284_220.swf?v='+sv+'');
-			$('.svideo embed').show();
+			//$('.svideo embed').attr('src','p284_220.swf?v='+sv+'');
+			$('.svideo embed').css('visibility','visible');
 			},500);
 		},
 	BigFlashPlayer : function(bv,sv){//大视频窗口打开
