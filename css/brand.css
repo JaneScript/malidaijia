@@ -4,7 +4,7 @@
 #down {height:215px;background:url(../img/brandup.png) no-repeat 0 -775px;clear:both;}
 .brand006{background:url(../img/brand006.png) no-repeat;height:285px;width:285px;}
 .brand006 img{cursor:pointer;}
-.article{color:#c9bc9c;margin:0 10px;}
+.article{color:#c9bc9c;}
 #mask1{width:20px;height:250px;background:url(../img/mask1.png);margin-top:-245px;margin-left:-7px;position:absolute;}
 .fanstitle{width:90px;height:26px;background:url(../img/brandtitles.png) no-repeat 0 0}
 .foundertitle{width:90px;height:26px;background:url(../img/brandtitles.png) no-repeat 0 -52px}
