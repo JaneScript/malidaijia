@@ -9,7 +9,7 @@ body{background:url(../img/bg.jpg) repeat-x;}
 .subnav01{width:166px;height:105px;line-height:105px;position:absolute;left:478px;top:30px;z-index:9;}
 .subnav01 a{background:rgba(128,78,33,0.8);filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#BF804e21,endcolorstr=#BF804e21);}
 
-.subnav02{width:297px;height:146px;position:absolute;left:96px;top:100px;z-index:9;}
+.subnav02{width:115px;height:146px;position:absolute;left:96px;top:100px;z-index:9;}
 #section2 .subnav02 a{color:#000;width:115px;height:146px;line-height:146px;background:rgba(255,255,255,0.8);filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#BFffffff,endcolorstr=#BFffffff);}
 .subnav03 a{background:rgba(178,48,141,0.8);filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#BFb2308d,endcolorstr=#BFb2308d);}
 .subnav03{width:131px;height:102px;line-height:102px;position:absolute;left:720px;top:175px;z-index:9;}

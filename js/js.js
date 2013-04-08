@@ -84,7 +84,7 @@ maire.homePage = {//玛丽黛佳首页
 			'width':182
 		},500,function(){
 			$('#tinyvedio').css('background','none');
-			$('#tinyvedio').append('<embed src="playVideoD-2.swf?v='+tinyvideo+'" width="182" height="145" type="application/x-shockwave-flash"></embed>')
+			$('#tinyvedio').append('<embed src="p182_145.swf?v='+tinyvideo+'" width="182" height="145" type="application/x-shockwave-flash" ></embed>')
 		})
 	},function(e){
 		var evt = e|| window.event;
@@ -116,15 +116,13 @@ maire.homePage = {//玛丽黛佳首页
 		var evt = e|| window.event;
 		evt.stopPropagation ?evt.stopPropagation() : (evt.cancelBubble=true);
 		var dis = $(this).attr('distance')*1;
-		if($(this).children('.moveimg').width()==dis){
+		
 			$(this).css('z-index',9)
 			$('#cover').hide();
 			$(this).children('.moveimg').animate({
 				'width':0
 			},500)
-		}else{
-			return false;
-		}
+		
 	})
 	$('.movey').hover(function(e){
 		var evt = e|| window.event;
@@ -143,16 +141,12 @@ maire.homePage = {//玛丽黛佳首页
 		var evt = e|| window.event;
 		evt.stopPropagation ?evt.stopPropagation() : (evt.cancelBubble=true);
 		var dis = $(this).attr('distance')*1;
-		if($(this).children('.moveimg').height()==dis){
 			$(this).css('z-index',9)
 			$('#cover').hide();
 			$(this).children('.moveimg').animate({
 				'height':0
 			},500)
-		}else{
-			return false;
-		}
-	})
+		})
 	}
 }
 maire.brand = {	//品牌页面
