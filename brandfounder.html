@@ -148,13 +148,15 @@
 </body>
 <script src="js/jquery-1.7.1.min.js"></script>
 <script src="js/jscrollpane.js"></script>
+<script src="js/curvycorners.src.js"></script>
 <script src="js/js.js"></script>
 <script type="text/javascript">
 $(function(){
 	maire.initialize();
+	maire.curvycorners();
+	$(".nano").nanoScroller({alwaysVisible:true});
 	maire.brand.fans.fadeShow();	
 	setInterval(function(){maire.brand.fans.fadeShow();},5000);
-    $(".nano").nanoScroller({alwaysVisible:true});
 });
 </script>
 </html>

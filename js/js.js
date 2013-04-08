@@ -63,11 +63,6 @@ var maire = {//玛丽黛佳 全局方法
 }
 maire.homePage = {//玛丽黛佳首页
 	initialize :function(){
-		$(".sliderout").hover(function(){
-		$("#cover").show();
-	}, function(){
-		$("#cover").hide();
-	});
 	function scroll() {
 		var i=$(document).scrollTop();
 		i+=5;
@@ -79,7 +74,9 @@ maire.homePage = {//玛丽黛佳首页
 	$("#homenav").mouseover(function(){
 		scroll();
 	});
-	$('.subnav02').hover(function(){//滑出小视频
+	$('.subnav02').hover(function(e){//滑出小视频
+		var evt = e|| window.event;
+		evt.stopPropagation ?evt.stopPropagation() : (evt.cancelBubble=true);
 		var tinyvideo = $('#tiny').val();
 		$(this).css('z-index',11)
 		$('#cover').show();
@@ -89,7 +86,9 @@ maire.homePage = {//玛丽黛佳首页
 			$('#tinyvedio').css('background','none');
 			$('#tinyvedio').append('<embed src="playVideoD-2.swf?v='+tinyvideo+'" width="182" height="145" type="application/x-shockwave-flash"></embed>')
 		})
-	},function(){
+	},function(e){
+		var evt = e|| window.event;
+		evt.stopPropagation ?evt.stopPropagation() : (evt.cancelBubble=true);
 		$(this).css('z-index',9)
 		$('#cover').hide();
 		$('#tinyvedio').animate({
@@ -100,33 +99,59 @@ maire.homePage = {//玛丽黛佳首页
 			
 		})
 	})
-	$('.movex').hover(function(){
+	$('.movex').hover(function(e){
+		var evt = e|| window.event;
+		evt.stopPropagation ?evt.stopPropagation() : (evt.cancelBubble=true);
 		var dis = $(this).attr('distance')*1;
-		$(this).css('z-index',11)
-		$('#cover').show();
-		$(this).children('.moveimg').animate({
-			'width':dis
-		},500)
-	},function(){
-		$(this).css('z-index',9)
-		$('#cover').hide();
-		$(this).children('.moveimg').animate({
-			'width':0
-		},500)
+		if($(this).children('.moveimg').width()==0){
+			$(this).css('z-index',11)
+			$('#cover').show();
+			$(this).children('.moveimg').animate({
+				'width':dis
+			},500)
+		}else{
+			return false;
+		}
+	},function(e){
+		var evt = e|| window.event;
+		evt.stopPropagation ?evt.stopPropagation() : (evt.cancelBubble=true);
+		var dis = $(this).attr('distance')*1;
+		if($(this).children('.moveimg').width()==dis){
+			$(this).css('z-index',9)
+			$('#cover').hide();
+			$(this).children('.moveimg').animate({
+				'width':0
+			},500)
+		}else{
+			return false;
+		}
 	})
-	$('.movey').hover(function(){
+	$('.movey').hover(function(e){
+		var evt = e|| window.event;
+		evt.stopPropagation ?evt.stopPropagation() : (evt.cancelBubble=true);
 		var dis = $(this).attr('distance')*1;
-		$(this).css('z-index',11)
-		$('#cover').show();
-		$(this).children('.moveimg').animate({
-			'height':dis
-		},500)
-	},function(){
-		$(this).css('z-index',9)
-		$('#cover').hide();
-		$(this).children('.moveimg').animate({
-			'height':0
-		},500)
+		if($(this).children('.moveimg').height()==0){
+			$(this).css('z-index',11)
+			$('#cover').show();
+			$(this).children('.moveimg').animate({
+				'height':dis
+			},500)
+		}else{
+			return false;
+		}
+	},function(e){
+		var evt = e|| window.event;
+		evt.stopPropagation ?evt.stopPropagation() : (evt.cancelBubble=true);
+		var dis = $(this).attr('distance')*1;
+		if($(this).children('.moveimg').height()==dis){
+			$(this).css('z-index',9)
+			$('#cover').hide();
+			$(this).children('.moveimg').animate({
+				'height':0
+			},500)
+		}else{
+			return false;
+		}
 	})
 	}
 }
@@ -137,7 +162,7 @@ maire.brand = {	//品牌页面
 		$player.hide();
 		setTimeout(function(){
 			$player.remove();
-			$('.svideo embed').attr('src','playVideoA-1.swf?v='+sv+'');
+			$('.svideo embed').attr('src','p284_220.swf?v='+sv+'');
 			$('.svideo embed').show();
 			},500);
 		},
@@ -146,10 +171,9 @@ maire.brand = {	//品牌页面
 		var winW = document.body.clientWidth;
 		var winH = document.body.clientHeight; 
 		var left = (winW-855)/2;
-		var vedio = $('#vedioname').val();//隐藏域获取视频文件名
 		var $player = $('.playerPanel');
 		var $playerCloseBtn = $('.playerPanel span');
-		$('#center').append('<div class="playerPanel" style="position:absolute;width:855px;height:550px;top:130px;left:'+left+'px;background:#000;"><p style="text-align:right;height:20px;";><span style="margin-right:10px;line-height:20px;font-size:12px;color:#fff;cursor:pointer"><img src="img/close.png" /></span></p><div class="player" style="width:855px;height:510px;display:none;"><embed src=playVideoA-2.swf?v='+vedio+' width="854" height="510" type="application/x-shockwave-flash"></embed></div><p style="height:20px;"></p></div>')
+		$('#center').append('<div class="playerPanel" style="position:absolute;width:855px;height:550px;top:130px;left:'+left+'px;background:#000;"><p style="text-align:right;height:20px;";><span style="margin-right:10px;line-height:20px;font-size:12px;color:#fff;cursor:pointer"><img src="img/close.png" /></span></p><div class="player" style="width:855px;height:510px;display:none;"><embed src=p854_510.swf?v='+bv+' width="854" height="510" type="application/x-shockwave-flash" wmode="transparent"></embed></div><p style="height:20px;"></p></div>')
 		var $playerDiv = $('.player');
 		$playerDiv.show(1000);
 		$playerCloseBtn.live('click',function(){
@@ -414,12 +438,15 @@ maire.college = {//玛粉学院
 	}
 }
 maire.fansvideo = {
+	initHeight : function(dom,row,unith){
+		var length = dom.children().length;
+		var h = Math.ceil(length/row)*unith;
+		dom.height(h);
+	},
 	initialize : function(){
-		$('.fanv_con').children().each(function(){
-			var $this = $(this);
-			var length = $this.children().length;
-			var h = Math.ceil(length/4)*230;
-			$this.height(h);
+		$('.fansv_ul').each(function(){
+			var _this = this;
+			maire.fansvideo.initHeight($(this),4,230);	
 		})
 	}
 }
@@ -441,5 +468,22 @@ maire.regist = {
 		});
 		
 		$('.chosenselect').chosen();
+	}
+}
+maire.color = {
+	initialize : function(){
+		$('.oprateicon').live('click',function(){
+			var $this = $(this);
+			if($this.hasClass('oprateicon2')){
+				$this.siblings('.coloroprate').animate({'top':'-26px'},500,function(){
+					$this.removeClass('oprateicon2')
+				})
+			}else{
+				$this.siblings('.coloroprate').animate({'top':'0'},500,function(){
+					$this.addClass('oprateicon2')
+				})
+			}
+			
+		})
 	}
 }
