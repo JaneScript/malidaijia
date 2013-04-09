@@ -32,7 +32,7 @@
 .story{height:285px;width:285px;}
 .playerPanel{border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;}
 .storyArticle{background:url(../img/brand005.png) no-repeat;height:285px;width:285px;position:relative}
-.storyArticle .article p{text-indent:12px;font-family:"幼圆";font-size:12px;}
+.storyArticle .article p{text-indent:12px;font-family:"幼圆";font-size:12px;width:220px;margin-left:5px;}
 /*哲学*/
 #philosophyup {height:155px;background:url(../img/brandup.png) no-repeat 0 -465px;margin-bottom:2px;}
 .philosophyArticle{background:url(../img/brand005.png) no-repeat;height:285px;width:285px;position:relative}
