@@ -150,7 +150,7 @@ maire.homePage = {//玛丽黛佳首页
 	}
 }
 maire.brand = {	//品牌页面
-	playerClose : function(sv){//关闭大视频窗口
+	playerClose : function(){//关闭大视频窗口
 		var $player = $('.playerPanel');
 		//var src = $('#svideoname').val();
 		$player.hide();
@@ -160,18 +160,18 @@ maire.brand = {	//品牌页面
 			$('.svideo embed').css('visibility','visible');
 			},500);
 		},
-	BigFlashPlayer : function(bv,sv){//大视频窗口打开
+	BigFlashPlayer : function(bv){//大视频窗口打开
 		var _this = this;
 		var winW = document.body.clientWidth;
 		var winH = document.body.clientHeight; 
 		var left = (winW-855)/2;
 		var $player = $('.playerPanel');
 		var $playerCloseBtn = $('.playerPanel span');
-		$('#center').append('<div class="playerPanel" style="position:absolute;width:855px;height:550px;top:130px;left:'+left+'px;background:#000;"><p style="text-align:right;height:20px;";><span style="margin-right:10px;line-height:20px;font-size:12px;color:#fff;cursor:pointer"><img src="img/close.png" /></span></p><div class="player" style="width:855px;height:510px;display:none;"><embed src=p854_510.swf?v='+bv+' width="854" height="510" type="application/x-shockwave-flash" wmode="transparent"></embed></div><p style="height:20px;"></p></div>')
+		$('#center').append('<div class="playerPanel" style="position:absolute;width:855px;height:550px;top:35px;left:0px;background:#000;"><p style="text-align:right;height:20px;";><span style="margin-right:10px;line-height:20px;font-size:12px;color:#fff;cursor:pointer"><img src="img/close.png" /></span></p><div class="player" style="width:855px;height:510px;display:none;"><embed src=p854_510.swf?v='+bv+' width="854" height="510" type="application/x-shockwave-flash" wmode="transparent"></embed></div><p style="height:20px;"></p></div>')
 		var $playerDiv = $('.player');
 		$playerDiv.show(1000);
 		$playerCloseBtn.live('click',function(){
-			_this.playerClose.call(this,sv)
+			_this.playerClose()
 		});
 	}
 	/*initialize : function(){
