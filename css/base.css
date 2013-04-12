@@ -25,7 +25,7 @@ h1 a{display:block;width:223px;height:52px;}
 h2{width:442px;height:20px;background:url(../img/topnav.jpg) no-repeat;text-indent:-9999px;position:relative;top:-20px;left:590px;}
 
 h2 a{background:url(about:blank);}
-h2 a.toplink_login{display:block;width:46px;height:20px; top:0; left:0; position:absolute;}
+h2 a.toplink_login{display:block;cursor:pointer;width:46px;height:20px; top:0; left:0; position:absolute;}
 h2 a.toplink_reg{display:block;width:46px;height:20px; top:0; left:52px; position:absolute;}
 h2 a.toplink_music{display:block;width:22px;height:20px; top:0; left:116px; position:absolute;}
 h2 a.toplink_weibo{display:block;width:120px;height:20px; top:0; left:155px; position:absolute;}
@@ -365,8 +365,9 @@ button{display:block;float:left;margin-right:2px;width:58px;font-size:10px;curso
 .mt20{margin-top:20px;}
 
 /*登陆*/
-#loginPanel{width:1024px;height:655px;background:url(../img/log_bg.jpg) no-repeat;}
-.logform{width:374px;height:200px;padding:227px 325px;}
+#poplogin{position:absolute;background:url(../img/log_bg.jpg) no-repeat 50% 50%;z-index:10000;}
+.closepop{width:17px;height:18px;background:url(../img/closeicon.png) no-repeat;position:absolute;top:10px;right:10px;cursor:pointer;}
+.logform{width:374px;height:200px;padding:82px 33px;border:2px solid #424041;}
 .logheader{font:21px/30px "Microsoft YaHei";height:30px;color:#dbac5b;margin-bottom:20px;}
 .logitem{width:364px;height:24px;line-height:24px;margin:15px 0 15px 10px;}
 label{font:12px/24px "Microsoft YaHei";color:#fff;display:inline-block;width:60px;letter-spacing:2px;}
