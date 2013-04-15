@@ -482,6 +482,11 @@ maire.regist = {
 		});
 		
 		$('.chosenselect').chosen();
+		
+		$('.registmore').click(function(){
+			var $this = $(this);
+			$('.hideregist').animate({'height':138},500,function(){$this.parent().remove();})
+		})
 	}
 }
 maire.color = {
