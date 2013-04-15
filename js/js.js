@@ -463,7 +463,7 @@ maire.college = {//玛粉学院
 maire.fansvideo = {
 	initHeight : function(dom,row,unith){
 		var length = dom.children().length;
-		var h = Math.ceil(length/row)*unith;
+		var h = Math.ceil(length/row)*unith+32;
 		dom.height(h);
 	},
 	initialize : function(){

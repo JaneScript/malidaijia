@@ -19,7 +19,7 @@ img{border:0 none;vertical-align:middle;}
 .hide{display:none;}
 body{font:12px "宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;background:url(../img/brandbg.jpg) repeat-x;}
 .box{width:1024px;margin:0 auto;}
-#logo{height:63px;background:#000;position:fixed;left:0px;top:0px;width:100%;z-index:12;_position:absolute;}
+#logo{height:63px;background:#000;left:0px;top:0px;width:100%;z-index:12;}
 h1{width:223px;height:52px;background:url(../img/logo.jpg) no-repeat;text-indent:-9999px;position:relative;top:4px;left:10px;}
 h1 a{display:block;width:223px;height:52px;}
 h2{width:442px;height:20px;background:url(../img/topnav.jpg) no-repeat;text-indent:-9999px;position:relative;top:-20px;left:590px;}
@@ -38,7 +38,7 @@ h2 a.toplink_tmall{display:block;width:135px;height:20px; top:0; left:282px; pos
 #nav li span{float:right;width:1px;height:31px;background:url(../img/border.jpg) no-repeat;text-indent:-9999px;}
 #pop{background:url(../img/pop.jpg) repeat-x;height:205px;width:387px;position:absolute;left:305px;top:31px;z-index:10;padding-left:15px;display:none;}
 /*新做的导航*/
-.navbox{width:100%;height:31px;background:url(../img/topnavbg.jpg) repeat-x;margin-top:63px;}
+.navbox{width:100%;height:31px;background:url(../img/topnavbg.jpg) repeat-x;}
 #navcyt{height:31px;width:842px;padding-left:182px;margin:0 auto;position:relative;}
 #navcyt li{float:left;width:120px;height:31px;}
 #navcyt li a{float:left;width:119px;height:31px;text-align:center;font:11px/31px 微软雅黑;text-transform:uppercase;color:#e0e0e0;}
@@ -255,9 +255,12 @@ p a.white{color:#fff;}
 .positiondivpage a{width:40px;height:100%;border:1px solid #96784c;display:block;float:left;margin:0 5px;font:12px/22px "Microsoft YaHei";text-align:center;text-decoration:none;color:#fff;}
 
 /*玩转色彩*/
-.colorbody{background:url(../img/fansvideo_bg.jpg) repeat 0 50%;width:100%;min-height:auto;}
+.colorlogo{position:fixed;}
+.colornavbox{top:63px;position:fixed;z-index:100;}
+.colorbody{background:url(../img/fansvideo_bg.jpg) repeat 0 50%;width:100%;min-height:auto;position:relative;top:162px;}
 .colorcontent{width:1024px;min-height:600px;background:#000;margin:0 auto;}
-.colornav{width:964;height:68px;margin-left:60px;}
+.colornavbg{width:100%;height:68px;background:#000;position:fixed;top:94px;z-index:100;}
+.colornav{width:964px;height:100%;background:#000;margin:0 auto;padding-left:60px;}
 .colornav li{float:left;width:240px;height:58px;padding-top:10px;}
 .colornavheader1{font:12px/24px "Microsoft YaHei";font-weight:600;color:#fff;text-align:center;cursor:pointer;}
 .colornavheader1 em{font-family:"Calibri";margin-left:5px;font-weight:500;}
@@ -287,7 +290,7 @@ p a.white{color:#fff;}
 .colortype span{margin-left:5px;}
 .colorbuttons{width:100%;height:22px;margin-top:4px;}
 button{display:block;float:left;margin-right:2px;width:58px;font-size:10px;cursor:pointer;padding:1px 3px}
-
+.colorfooter{position:fixed;bottom:0;}
 
 
 
@@ -380,6 +383,8 @@ label{font:12px/24px "Microsoft YaHei";color:#fff;display:inline-block;width:60p
 .reset{float:right;}
 
 /*注册*/
+.input2{width:135px;height:24px;border:0;outline:none;background:#b9b9b9;padding-left:5px;line-height:24px;}
+.yanzhengimg{vertical-align:top;height:24px;}
 #registPanel{width:1024px;height:655px;background:url(../img/log_bg.jpg) no-repeat;}
 #registPanel label{width:80px;}
 .registform{width:574px;height:495px;padding:80px 225px;}
