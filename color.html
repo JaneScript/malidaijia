@@ -70,29 +70,29 @@
 			<li>
 				<p class="colornavheader2">产品类型<br /><em>Type</em></p>
 				<div class="colornavright">
-					<p class="coloritem fl">眼影<em>shadow</em></p>
-					<p class="coloritem fl">唇膏<em>lipstick</em></p>
-					<p class="coloritem fl">唇彩<em>lip gloss</em></p>
-					<p class="coloritem fl">粉底<em>powder</em></p>
-					<p class="coloritem fl">腮红<em>blusher</em></p>
-					<p class="coloritem fl">笔<em>pencil</em></p>
+					<p class="coloritem fl pc">眼影<em>shadow</em></p>
+					<p class="coloritem fl pc">唇膏<em>lipstick</em></p>
+					<p class="coloritem fl pc">唇彩<em>lip gloss</em></p>
+					<p class="coloritem fl pc">粉底<em>powder</em></p>
+					<p class="coloritem fl pc">腮红<em>blusher</em></p>
+					<p class="coloritem fl pc">笔<em>pencil</em></p>
 				</div>
 			</li>
 			<li class="colornavbd"></li>
 			<li>
 				<p class="colornavheader2">上妆效果<br /><em>Outcome</em></p>
 				<div class="colornavright">
-					<p class="coloritem1">珠光<em>pearly-lustre</em></p>
-					<p class="coloritem1">亚光<em>matt</em></p>
+					<p class="coloritem1 pc">珠光<em>pearly-lustre</em></p>
+					<p class="coloritem1 pc">亚光<em>matt</em></p>
 				</div>
 			</li>
 			<li class="colornavbd"></li>
 			<li>
 				<p class="colornavheader2">上妆部位<br /><em>Position</em></p>
 				<div class="colornavright">
-					<p class="coloritem1">眼部<em>eyes</em></p>
-					<p class="coloritem1">脸部<em>face</em></p>
-					<p class="coloritem1">唇部<em>lips</em></p>
+					<p class="coloritem1 pc">眼部<em>eyes</em></p>
+					<p class="coloritem1 pc">脸部<em>face</em></p>
+					<p class="coloritem1 pc">唇部<em>lips</em></p>
 				</div>
 			</li>
 		</ul>
@@ -186,5 +186,13 @@
 	maire.initialize();
 	maire.color.initialize();
 	maire.fansvideo.initHeight($('.pickul'),8,127);
+</script>
+<script type="text/javascript">
+	$(function(){
+		$('.pc').click(function(){
+			var $this = $(this);
+			$this.hasClass('pickedcolor')?$this.removeClass('pickedcolor'):$this.addClass('pickedcolor')
+		})
+	})
 </script>
 </html>

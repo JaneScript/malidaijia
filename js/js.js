@@ -56,7 +56,11 @@ var maire = {//玛丽黛佳 全局方法
 		var winScroll = $(window).scrollTop();
         var popTop = windowH > h ? ((windowH - h) / 2 + winScroll) : 0;
         var popLeft = (winW - w) / 2;
-		$('body').append('<div id="mask" style="position:absolute;width:100%;height:'+maskH+'px;top:-63px;left:0;z-index:9999;background:#000;opcity:0.5"></div>')
+		if($('.colorbody').length>0){
+			var cb = $('.colorbody').height();
+			maskH = cb+162;
+		}
+		$('body').append('<div id="mask" style="position:absolute;width:100%;height:'+maskH+'px;top:0;left:0;z-index:9999;background:#000;opcity:0.5"></div>')
         $('body').append(html);
         //$('#mask').css({ 'height': bodyH });
         $('#' + popId + '').css({ 'top': popTop, 'left': popLeft });
@@ -504,5 +508,6 @@ maire.color = {
 			}
 			
 		})
+		
 	}
 }

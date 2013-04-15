@@ -1,6 +1,6 @@
 html,body{-webkit-text-size-adjust:none;}
 body{background:url(../img/bg.jpg) repeat-x;}
-.topwarp{width:1024px;height:687px;position:relative;margin:58px auto 0;}
+.topwarp{width:1024px;height:687px;position:relative;margin:0 auto 0;}
 #section1{width:100%;height:100%;padding:1px;position:absolute;top:0;left:0;z-index:5;}
 #homenav{width:794px;height:36px;cursor:pointer;position:absolute;z-index:6;top:490px;left:115px;}
 #section2{width:100%;height:682px;background:url(../img/2.jpg) no-repeat 50% 0;position:relative;}
