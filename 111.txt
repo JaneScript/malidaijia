@@ -1,42 +1,16 @@
-1.顶部的右上角多了个天猫的链接
-<div id="logo">
-	<div class="box">
-		<h1><a href="home.html" title="">玛丽黛佳</a></h1>
-       <h2>
-        	<a title="" class="toplink_login"></a>
-        	<a href="" title="" class="toplink_reg"></a>
-        	<a href="" title="" class="toplink_music"></a>
-        	<a href="" title="" class="toplink_weibo"></a>
-			<a href="" class="toplink_tmall"></a>
-	   </h2>
-	</div>
+1.玩转色彩页面重做
+2.college.html头部新增图片轮播，html结构更改
+此段代码替换原来的#topbg
+<div id="topbg">
+	<p class="collegeprev"></p>
+	<ul class="collegekv">
+		
+<li><a href=""><img src="img/collegetop_bg.jpg" alt="" /></a></li>
+
+		<li class="hide"><a href=""><img src="img/product_bg1.jpg" alt="" /></a></li>
+
+		<li class="hide"><a href=""><img src="img/collegetop_bg.jpg" alt="" /></a></li
+	>
+</ul>
+	<p class="collegenext"></p>
 </div>
-
-2.底部链接顺序重新排列
-<div id="footer">
-		<div class="foot">
-        <ul>
-        	<li style="padding:0;">&copy;2012 上海菲扬化妆品有限公司版权所有</li>
-            <li><a href="mairemap.html">网站导航</a></li>
-            <li><a href="findcounter.html">查找专柜</a></li>
-            <li><a href="contactus.html">联系我们</a></li>
-            <li><a href="recruitment.html">诚征英才</a></li>
-            <li><em>search</em></li>
-            <li class="search"><input type="submit" class="sm"/><input type="text" name="" class="txt"/></li>
-			<li class="gongshang">沪ICP备08100694</li>
-		</ul>
-		</div>
-	</div>
-3.注册页面改为弹窗
-调用方法为maire.popshow(html,w,h,popId);
-html为弹层的html代码
-w是弹层宽度
-h是弹层的高度
-popId表示弹层的ID
-
-注册页面的HTML仍然保存在Login.html中
-
-例如注册页的弹层执行：
-$('.toplink_login').click(function(){
-			maire.popshow('<div id="poplogin" class="poppanel"><p class="closepop"></p><div class="logform"><p class="logheader">用户登陆</p><div class="logitem"><label for="">用&nbsp;户&nbsp;名</label><input type="text" class="input1" /><a href="regist.html" class="toregist">点击注册</a></div><div class="logitem"><label for="">密&nbsp;&nbsp;&nbsp;&nbsp;码</label><input type="password" class="input1" /><a href="" class="toregist">忘记密码？</a></div><div class="logbtns"><p class="submit">提交</p><p class="reset">重置</p></div></div></div>',444,368,'poplogin')
-		})

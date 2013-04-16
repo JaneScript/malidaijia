@@ -186,6 +186,18 @@ maire.homePage = {//玛丽黛佳首页
 				'height':0
 			},500)
 		})
+		
+		var len=$(".topwarp li").length;
+		$('.homeprev').click(function(){
+			var i=$(".topwarp li:visible").prevAll().length;
+			i=i<=1?1:i;
+			$(".topwarp li").eq(i-1).show().siblings().hide();
+		})
+		$('.homenext').click(function(){
+			var i=$(".topwarp li:visible").prevAll().length;
+			i=i>=len-2?len-2:i;
+			$(".topwarp li").eq(i+1).show().siblings().hide();
+		})
 	}
 }
 maire.brand = {	//品牌页面
@@ -467,7 +479,18 @@ maire.college = {//玛粉学院
 		$('.videopanel').html(html);
 	},
 	initialize : function(){
+		var len=$("#topbg li").length;
 		$('.content dt').click(this.videoplay);	
+		$('.collegeprev').click(function(){
+			var i=$("#topbg li:visible").prevAll().length;
+			i=i<=1?1:i;
+			$("#topbg li").eq(i-1).show().siblings().hide();
+		})
+		$('.collegenext').click(function(){
+			var i=$("#topbg li:visible").prevAll().length;
+			i=i>=len-2?len-2:i;
+			$("#topbg li").eq(i+1).show().siblings().hide();
+		})
 	}
 }
 maire.fansvideo = {
