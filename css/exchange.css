@@ -7,11 +7,10 @@ html,body{-webkit-text-size-adjust:none;}
 #page li .caption{display:block;font:13px/20px 微软雅黑;padding-left:20px;}
 #page li .title{padding-left:20px;margin-top:10px;display:none;color:#433e3e;font:14px/18px 宋体;}
 #page li .li-right{width:645px;height:655px;float:left;position:relative;}
-.exslider{padding-top:85px;width:645px;height:550px;overflow:hidden;}
-.img{height:460px;width:645px;background:no-repeat;}
-.newsSummary{width:645px;height:90px;}
-.newsSummary a{text-decoration:underline;margin-left:600px;color:#c9bc9c}
-.intro{margin-top:10px;font:12px/18px 宋体;}
+.exslider{padding-top:25px;width:645px;height:630px;overflow:hidden;}
+.img{height:630px;width:645px;}
+.img1{width:100%;height:540px;}
+.intro{font:12px/18px 宋体;width:645px;height:80px;position:absolute;top:575px;}
 .flip{width:645px;height:40px;background:rgba(0,0,0,.5);background:#000\9;filter:alpha(opacity=50)\9;position:absolute;left:0px;top:505px;}
 .flip-left{float:left;font:35px/40px arial;width:48px;height:40px;}
 .flip-right{float:right;width:43px;}

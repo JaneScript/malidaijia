@@ -401,12 +401,14 @@ label{font:12px/24px "Microsoft YaHei";color:#fff;display:inline-block;width:60p
 .hideregist{height:0;overflow:hidden}
 
 /*pro_lipstick*/
-#probody{width:100%;}
-.lipstickpanel{width:100%;height:610px;background:#000;}
+#probody{background:url(../img/fansvideo_bg.jpg) repeat 0 50%;width:100%;}
+.lipstickpanel{width:1024px;height:800px;background:#000;margin:0 auto;}
 .proleftnav{float:left;width:13.187%;height:100%;}
-.proright{float:right;width:86.813%;height:100%;}
-
-
+.proright{float:right;width:86.813%;height:800px;}
+.prolistheader1{width:100%;height:24px;font:15px/24px "Microsoft YaHei";text-indent:10px;display:block;color:#fff;background:url(../img/productlistnav_bg.jpg) no-repeat 0 0;margin-top:10px;cursor:pointer;}
+.prolistheader2{width:100%;height:20px;font:12px/20px "Microsoft YaHei";color:#4d4d4d;display:block;text-indent:20px;cursor:pointer;}
+.proleftnav .prolefthover1{background:url(../img/productlistnav_bg.jpg) no-repeat 0 bottom;}
+.proleftnav .prolefthover2{color:#fff;}
 /*找寻网页*/
 #searchhtmlPanel{width:1024px;height:655px;background:url(../img/searchhtml_bg.jpg) no-repeat;margin:0 auto;}
 .searchhtmlcontent{width:700px;padding:70px 162px 0;}
