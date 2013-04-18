@@ -91,7 +91,7 @@ p a.white{color:#fff;}
 #mask{position:absolute;z-index:998;top:0;left:0;background:#666;opacity:0.2;filter:alpha(opacity=0.2);}
 
 /*@招聘*/
-#recruitmentcontent{background:url('../img/recruitment_bg.png') no-repeat;height:655px;width:1024px;position:relative;}
+#recruitmentcontent{background:url(../img/recruitment_bg.png) no-repeat;height:655px;width:1024px;position:relative;}
 #recruitmentcontent .recruitmentBtn{padding-top:565px;margin-left:450px;cursor:pointer;}
 #recruitmentcontent .recruitment_btn{background:url(../img/btns.png) no-repeat 0 -41px;width:122px;height:39px;}
 #recruitmentcontent .recruitment_btn:hover{background:url(../img/btns.png) no-repeat 0 -1px;}
@@ -107,6 +107,24 @@ p a.white{color:#fff;}
 #jobinformationcontent .jobpositionPanel a{font-size:12px;font-family:"微软雅黑";color:#fff;}
 #jobinformationcontent .jobpositionPanel a:hover{color:#cc9966;}
 #jobinformationcontent #positionContent{overflow:hidden;width:777px;height:100px;float:left;overflow:hidden;}
+
+/*@招聘内容*/
+#recuitdetailPanel{background:url(../img/recuit_bg4.jpg) no-repeat;height:655px;width:1024px;position:relative;}
+.recuitbg3{width:579px;position:absolute;height:593px;top:20px;right:10px;background:url(../img/recuit_bg3.jpg) no-repeat;}
+.recuitcon{width:559px;height:553px;padding:30px 10px 10px}
+.recuitdetailheader2{width:100%;height:26px;font:18px/26px "Microsoft YaHei";text-indent:10px;color:#9E9E9F;font-weight:800;}
+.recuitdetailbd{width:80%;height:1px;border-top:1px solid #fff;margin-top:5px;}
+.positioninfo{width:270px;margin-left:10px;height:25px;line-height:30px;}
+.positionheader1{height:100%;width:115px;font:12px/25px "Microsoft YaHei";font-weight:700;color:#D8D9D9;float:left;margin-right:15px;}
+.positionheader1 em{color:#9E9E9F;font-weight:400;}
+.recuitdetailheader3{margin-top:20px;width:100%;height:30px;font:14px/30px "Microsoft YaHei";color:#D8D9D9;text-indent:10px;font-weight:600;}
+.positiondescribe{width:400px;height:340px;margin-left:10px;}
+.describe1{width:100%;height:155px;}
+.positionheader2{font-weight:700;color:#D8D9D9;float:left;height:22px;font:12px/22px "Microsoft YaHei";width:60px;}
+.dc1{float:left;width:340px;}
+.recuitdetailheader4{width:100%;height:auto;font:12px/22px "Microsoft YaHei";color:#9E9E9F;}
+.apply{text-align:center;font-size:14px;font-family:"Microsoft YaHei";color:#fff;border:1px solid #fff;width:64px;height:24px;line-height:24px;margin-top:15px;cursor:pointer;}
+
 
 /*@寻找专柜*/
 #findcontent{background:url(../img/specialcounter_bg.jpg) no-repeat;height:655px;width:1024px;position:relative;}
