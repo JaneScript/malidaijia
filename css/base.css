@@ -466,9 +466,10 @@ input[type="radio"]{cursor:pointer;}
 .mapheader5{height:24px;font:12px/24px "Microsoft YaHei";text-align:center;}
 .mapheader5 a{color:#4d4c4c}
 
-
-
-
+/*newnav*/
+.newnav{width:842px;margin:0 auto;}
+.newbox{width:100%;background:url(../img/product1_bg.jpg) repeat 0 50%;}
+.newcontent{width:1024px;margin:0 auto;}
 
 
 

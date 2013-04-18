@@ -36,8 +36,8 @@
 .dmncontent_part1 .sample_panel .eyeshadows li{float:left;margin:0 2px;width:31px;height:47px;cursor:pointer;}
 .dmncontent_part1 .sample_panel .eyeshadows img{width:31px;height:47px;}
 
-.sampleprice{width:140px;height:202px;float:right;padding-top:60px;}
-.sampleprice p{font-size:12px;font-family:"微软雅黑";color:#fff;}
+.sampleprice{width:140px;height:202px;float:right;padding-top:40px;}
+.sampleprice .sampleheader{font-size:12px;font-family:"微软雅黑";color:#fff;}
 .sampleprice input{width:75px;height:16px;background:#fff;color:#000;font-size:12px;font-family:"黑体";line-height:16px;border:0;margin:4px 0;cursor:pointer;}
 .sampleprice #buyrn{margin-top:30px;}
 .dmncontent_part1 .sample_panel .samplebd{width:1px;background:url(../img/sample_bd.jpg) no-repeat;width:1px;height:255px;}
@@ -65,7 +65,7 @@
 .suggestion{width:750px;height:auto;margin:0 auto;}
 .suggestion p{width:750px;height:50px;font-size:22px;font-family:"黑体";color:#fff;line-height:50px;}
 .suggestion ul{width:750px;height:124px;}
-.suggestion ul li{width:146px;height:122px;border:1px solid #575353;border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px;float:left;margin-right:30px;}
+.suggestion ul li{width:146px;height:122px;overflow:hidden;border:1px solid #575353;border-radius:12px;-moz-border-radius:12px;-webkit-border-radius:12px;float:left;margin-right:30px;}
 
 #otherproduct{width:420px;height:180px;background:#000;margin:40px auto 20px;padding:1px;}
 #otherproduct ul{width:396px;height:180px;margin:10px auto 0;}
@@ -97,10 +97,38 @@
 
 
 /*唇膏产品*/
-.lipcontent_part1{background:url(../img/dmnpart1_bg.jpg) repeat-x;width:1024px;height:580px;border-bottom:1px solid #575353;}
-.lipcontent_part1 .sample_panel{width:964px;height:262px;padding:0 0 0 60px;}
+.navbg{width:100%;height:31px;background:url(../img/navbg.jpg) repeat-x;}
+.product1content{width:100%;background:#141400;}
+.suggestion ul img{width:146px;height:122px;}
+.makeupstep{width:924px;padding-left:100px;}
+.product1header1{height:60px;clear:both;font:18px/60px "Microsoft YaHei";color:#CA1B1E;}
+.product1header1 em{margin-left:10px;font:17px/60px "Calibri";}
+.makeupsteptext{width:600px;font:12px/18px "Microsoft YaHei";color:#717071;margin:15px 0;}
+.moverstep{width:924px;padding-left:100px;}
+.constituents{width:924px;padding-left:100px;height:}
+.constituentsul{width:100%;height:205px;}
+.constituentsul li{height:100%;float:left;width:110px;padding:10px 15px;}
+.constituenticon{width:85px;height:145px;margin:0 auto;}
+.constituenticon img{width:100%;height:100%;}
+.constituenname{width:100%;height:30px;font:16px/30px "Microsoft YaHei";color:#CA1B1E;border-bottom:1px solid #CA1B1E;text-align:center;}
+.proimg{width:144px;height:260px;float:left;}
+.proimg img{width:100%;height:100%;}
+.product1samplename1{font:22px/26px "Microsoft YaHei";color:#CA1B1E;border-bottom:1px solid #CA1B1E;height:26px;}
+.product1samplename2{color:#a0a0a0;height:18px;font:12px/18px "Calibri"; }
+.mt20{margin-top:20px;}
+.product1videopanel{height:300px;width:400px;float:left;}
+.product1videoplay{width:398px;height:278px;border:1px solid #fff;}
+.product1sampletext{width:800px;padding-left:100px;margin:20px;}
+.product1text{font:15px/22px "Microsoft YaHei";color:#9FA0A0;}
+.videopickul{height:20px;width:100%;}
+.videopickul li{float:left;border-right:1px solid #8c8c8c;width:20px;text-indent:6px;cursor:pointer;color:#fff;}
+
+
+
+.lipcontent_part1{width:1024px;padding-top:55px;}
+.lipcontent_part1 .sample_panel{width:924px;height:300px;padding:0 0 0 100px;}
 .lipcontent_part1 .sample_panel>div{float:left;}
-.lipcontent_part1 .sample_panel #eye_samplepic{width:332px;height:262px;background:url(../img/lip_sample.png) no-repeat 0 0;margin-right:12px;}
+.lipcontent_part1 .sample_panel #eye_samplepic{width:332px;height:270px;padding-top:30px;margin-right:80px;}
 .lipcontent_part1 .sample_panel .samplebd{width:1px;background:url(../img/sample_bd.jpg) no-repeat;width:1px;height:255px;}
 .lipcontent_part1 .vediopanel{width:924px;height:300px;padding-left:100px;margin-top:0;}
 
@@ -109,8 +137,7 @@
 .lipcontent_part1 .vediopanel .vediotext p{font-size:12px;font-family:"黑体";color:#EEDCB3;width:270px;height:150px;font-weight:600;margin-top:40px;line-height:20px;overflow:hidden;}
 .lipcontent_part1 .vediopanel .vedio{width:406px;height:282px;border:1px solid #fff}
 
-#lip_bd2{width:1024px;height:62px;background:#E60012;}
-#lip_bd2 img{width:1024px;height:62px;}
+#lip_bd2{width:1024px;height:62px;background:#E60012;font:20px/62px "黑体";color:#fff;text-align:center;}
 
 #lip_samples{margin-left:30px;padding-top:20px;}
 #lip_samples table{float:left;}
