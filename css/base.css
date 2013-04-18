@@ -22,14 +22,14 @@ body{font:12px "宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-si
 #logo{height:63px;background:#000;left:0px;top:0px;width:100%;z-index:12;}
 h1{width:223px;height:52px;background:url(../img/logo.jpg) no-repeat;text-indent:-9999px;position:relative;top:4px;left:10px;}
 h1 a{display:block;width:223px;height:52px;}
-h2{width:442px;height:20px;background:url(../img/topnav.jpg) no-repeat;text-indent:-9999px;position:relative;top:-20px;left:590px;}
+h2{width:433px;height:20px;background:url(../img/topnav.jpg) no-repeat;text-indent:-9999px;position:relative;top:-20px;left:590px;}
 
 h2 a{background:url(about:blank);}
-h2 a.toplink_login{display:block;cursor:pointer;width:46px;height:20px; top:0; left:0; position:absolute;}
-h2 a.toplink_reg{display:block;width:46px;height:20px; top:0; left:52px; position:absolute;}
-h2 a.toplink_music{display:block;width:22px;height:20px; top:0; left:116px; position:absolute;}
-h2 a.toplink_weibo{display:block;width:120px;height:20px; top:0; left:155px; position:absolute;}
-h2 a.toplink_tmall{display:block;width:135px;height:20px; top:0; left:282px; position:absolute;}
+h2 a.toplink_login{display:block;cursor:pointer;width:50px;height:20px; top:0; left:5px; position:absolute;}
+h2 a.toplink_reg{display:block;cursor:pointer;width:46px;height:20px; top:0; left:62px; position:absolute;}
+h2 a.toplink_music{display:block;width:22px;height:20px; top:0; left:123px; position:absolute;}
+h2 a.toplink_weibo{display:block;width:120px;height:20px; top:0; left:162px; position:absolute;}
+h2 a.toplink_tmall{display:block;width:135px;height:20px; top:0; left:290px; position:absolute;}
 #nav{height:31px;padding-left:182px;position:relative;z-index:2;}
 #nav li{float:left;width:120px;height:31px;}
 #nav li a{float:left;width:119px;height:31px;text-align:center;font:11px/31px 微软雅黑;text-transform:uppercase;color:#e0e0e0;}
