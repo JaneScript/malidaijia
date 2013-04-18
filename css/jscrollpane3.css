@@ -13,8 +13,8 @@
   right         : 0;
   bottom        : 0;
   left          : 0;
-  width:445px;
-  height:495px;
+  width:485px;
+  height:auto;
   padding-right:10px;
 }
 .nano .content:focus {
