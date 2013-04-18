@@ -415,14 +415,15 @@ label{font:12px/24px "Microsoft YaHei";color:#fff;display:inline-block;width:60p
 .registheader{font:21px/30px "Microsoft YaHei";height:30px;color:#dbac5b;}
 .registheader1{font:12px/24px "Microsoft YaHei";height:24px;color:#fff;}
 .setpsdtip{font:10px/12px "Microsoft YaHei";color:#8b8b8b;display:inline-block;height:26px;vertical-align:bottom;*vertical-align:top;}
-.registitem{width:564px;height:26px;line-height:26px;margin:15px 0 15px 10px;}
+.registitem{width:564px;height:26px;line-height:26px;margin:10px 0 10px 10px;}
 .setmailtip{font:10px/26px "Microsoft YaHei";color:#8b8b8b;display:inline-block;height:26px;}
 .birthtext{font:12px/24px "Microsoft YaHei";color:#fff;vertical-align:top;}
 .registheader2{font:10px/26px "Microsoft YaHei";color:#8b8b8b;margin-left:10px;}
 #registPanel .chosenselect{width:74px;height:24px;padding:0;}
 .registmore{cursor:pointer;}
 .hideregist{height:0;overflow:hidden}
-
+.sextext{color:#fff;line-height:26px;font-size:12px;font-family:"Microsoft YaHei";margin:0 15px}
+input[type="radio"]{cursor:pointer;}
 /*pro_lipstick*/
 #probody{background:url(../img/fansvideo_bg.jpg) repeat 0 50%;width:100%;}
 .lipstickpanel{width:1024px;height:800px;background:#000;margin:0 auto;}
