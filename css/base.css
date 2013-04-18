@@ -324,7 +324,7 @@ button{display:block;float:left;margin-right:2px;width:58px;font-size:10px;curso
 
 /*资讯*/
 #infomationPanel{background:#000;width:1024px;height:655px;}
-.infowarp{width:774px;height:595px;padding:30px 125px;}
+.infowarp{width:824px;height:595px;padding:30px 100px;}
 .infomationheader{height:90px;width:120px;background:url(../img/infomationheader.png) no-repeat 7px 30px;}
 .infomationleft{width:265px;height:495px;float:left;position:relative;margin-right:85px;}
 .infoleftimg1{width:265px;height:265px;position:absolute;top:0;left:0;}
@@ -332,7 +332,7 @@ button{display:block;float:left;margin-right:2px;width:58px;font-size:10px;curso
 .infoleftimg3{width:145px;height:100px;position:absolute;top:280px;right:0;}
 .infoleftimg4{width:145px;height:100px;position:absolute;bottom:0;right:0;}
 
-.infomationright{height:495px;width:415px;float:left;}
+.infomationright{height:495px;width:465px;float:left;}
 .infomation_ul{width:100%;height:455px;}
 .infomation_ul li{width:100%;height:25px;}
 .infomation_ul .info{display:block;width:320px;height:25px;font:12px/25px "Microsoft YaHei";color:#888888;float:left;}
@@ -342,6 +342,10 @@ button{display:block;float:left;margin-right:2px;width:58px;font-size:10px;curso
 .pagediv{width:100%;height:25px;}
 .pagediv a{display:block;float:left;width:40px;text-align:center;height:100%;font:11px/25px "Microsoft YaHei";color:#888888;}
 .firstpage{margin-left:230px;}
+/*咨询内页*/
+.infomationrighttitle{color:#878787;font-size:14px;font-family:"Microsoft YaHei";text-align:center;margin-bottom:20px;}
+.infomationrightarticle{color:#878787;font-size:12px;font-family:"Microsoft YaHei";text-indent:24px;line-height:18px;margin-bottom:15px;width:435px;}
+
 
 /*玛粉视频播放*/
 #fansvplayPanel{width:1024px;height:655px;background:#000;}
