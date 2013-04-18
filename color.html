@@ -178,6 +178,10 @@
 		</ul>
 		</div>
 	</div>
+	<div class="colormask"></div>
+	<div class="colortip">
+		<p class="tipclose"></p>
+	</div>
 </body>
 <script src="js/jquery-1.7.1.min.js"></script>
 <script src="js/jscrollpane.js"></script>
@@ -189,9 +193,17 @@
 </script>
 <script type="text/javascript">
 	$(function(){
+		//色块导航高亮效果
 		$('.pc').click(function(){
 			var $this = $(this);
 			$this.hasClass('pickedcolor')?$this.removeClass('pickedcolor'):$this.addClass('pickedcolor')
+		})
+		//玩法提示
+		var h = $('.colorbody').height()+162;
+		$('.colormask').height(h);
+		$('.tipclose').click(function(){
+			$('.colormask').remove();
+			$('.colortip').remove();
 		})
 	})
 </script>

@@ -186,9 +186,9 @@
 #bg .content1 .vtitle{margin:10px 0;width:450px;}
 #bg .content1 .videopanel{width:448px;height:356px;border:1px solid rgb(64,64,64)}
 #bg .content1 .innerleft{float:left;width:450px;height:396px;}
-#bg .content1 .innerright{float:right;width:150px;height:350px;margin-top:40px;}
+#bg .content1 .innerright{float:left;margin:40px 0 0 20px;}
 #bg .content1 .innerright dl{width:102px;height:350px;}
-#bg .content1 .innerright dl dt{margin:6px 0;}
+#bg .content1 .innerright dl dt{margin:6px 0;cursor:pointer;}
 #bg .content1 .innerright dl img{width:102px;}
 #bg .content1 .innerright dl p{width:80px;margin:5px auto;font-size:12px;font-family:"黑体";color:#fff;text-align:center;}
 

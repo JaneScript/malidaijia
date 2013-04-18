@@ -60,7 +60,7 @@ var maire = {//玛丽黛佳 全局方法
 			var cb = $('.colorbody').height();
 			maskH = cb+162;
 		}
-		$('body').append('<div id="mask" style="position:absolute;width:100%;height:'+maskH+'px;top:0;left:0;z-index:9999;background:#000;opcity:0.5"></div>')
+		$('body').append('<div id="mask" style="position:absolute;width:100%;height:'+maskH+'px;top:0;left:0;z-index:9999;background:#000;opcity:0.5;filter:alpha(opacity=50);"></div>')
         $('body').append(html);
         //$('#mask').css({ 'height': bodyH });
         $('#' + popId + '').css({ 'top': popTop, 'left': popLeft });
@@ -505,6 +505,12 @@ maire.college = {//玛粉学院
 			var i=$("#topbg li:visible").prevAll().length;
 			i=i>=len-2?len-2:i;
 			$("#topbg li").eq(i+1).show().siblings().hide();
+		})
+		//点击视频自动播放
+		$('.content dt').click(function(){
+			var src = $(this).attr('src');
+			$('object').children('param[name="movie"]').val('p448_356.swf?v='+src+'')
+			$('embed').attr('src','p448_356.swf?v='+src+'');
 		})
 	}
 }

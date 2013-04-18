@@ -311,8 +311,9 @@ p a.white{color:#fff;}
 button{display:block;float:left;margin-right:2px;width:58px;font-size:10px;cursor:pointer;padding:1px 3px}
 .colorfooter{position:fixed;bottom:0;}
 
-
-
+.colormask{width:100%;position:absolute;z-index:999;top:0;left:0;background:#000;opacity:0.5;filter:alpha(opacity=50);}
+.colortip{width:444px;height:367px;position:absolute;top:50%;left:50%;margin-left:-222px;margin-top:-183px;background:url(../img/colortip.jpg) no-repeat;z-index:1000;}
+.tipclose{position:absolute;top:10px;right:10px;width:17px;height:18px;background:url(../img/closeicon.png) no-repeat;cursor:pointer;}
 
 
 
