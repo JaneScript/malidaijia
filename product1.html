@@ -85,12 +85,17 @@
 					</div>
 					<div class="product1videopanel">
 						<div class="product1videoplay">
-						
+							<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="100%" height="100%">
+								<param name="movie" value="p398_278.swf?v=flv/p2.flv" />
+								<param name="quality" value="high" />
+								<param name="wmode" value="transparent">
+								<embed src="p398_278.swf?v=flv/p2.flv" wmode="transparent" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="100%" height="100%"></embed>
+							</object>
 						</div>
 						<ul class="videopickul">
-							<li src="">1<span class="">.阿嫂水电费</span></li>
-							<li src="">2<span class="hide">.fdas</span></li>
-							<li src="">3<span class="hide">.范德萨鹅鹅鹅</span></li>
+							<li src="flv/p3.flv">1<span class="">.阿嫂水电费</span></li>
+							<li src="flv/p4.flv">2<span class="hide">.fdas</span></li>
+							<li src="flv/p5.flv">3<span class="hide">.范德萨鹅鹅鹅</span></li>
 						</ul>
 					</div>
 				</div>
@@ -182,9 +187,14 @@
 		$('.videopickul li').eq(0).width(200);
 		$('.videopickul li').click(function(){
 			var $this = $(this);
+			var src = $this.attr('src');
+			var html = '<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="100%" height="100%"><param name="movie" value="p398_278.swf?'+src+'" /><param name="quality" value="high" /><param name="wmode" value="transparent"><embed src="p398_278.swf?v='+src+'" wmode="transparent" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="100%" height="100%"></embed></object>'
 			$this.siblings().width(20);
 			$this.siblings().children().hide();
-			$this.animate({'width':200},function(){$this.children().show()})
+			$this.animate({'width':200},function(){
+				$this.children().show();
+				$('.product1videoplay').html(html);
+			})
 		})
 	})
 </script>
