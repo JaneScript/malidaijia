@@ -561,3 +561,53 @@ maire.color = {
 		
 	}
 }
+maire.inispiration = {//灵感页面
+	initialize : function(){
+		$('#contentleft i').click(function(){//灵感来源翻页
+			var Left = $('#contentmiddle ol').css('margin-left').split('p')[0]*1;
+			var LiWidth = 902;
+			var p = -Left/902;
+			var kind = $(this).parent().siblings('#contentmiddle').find('li').attr('kind');
+			if(Left%LiWidth==0&&Left<0){
+				$('#contentmiddle ol li[p='+(p-1)+']').siblings().removeClass('currentli');
+				$('#contentmiddle ol li[p='+(p-1)+']').addClass('currentli');
+				$('#contentmiddle ol').animate({'margin-left':Left+LiWidth},function(){
+					if(Left==-LiWidth){$('#contentleft i').css({'opacity':0});}
+					var currp = $('.currentli').attr('p')*1;
+					if(currp==0){
+						$('#contentleft').css({'background':'url(img/inspirationleft.jpg) repeat-y 0 0','opacity':1})
+						$('#contentright').css({'background':'url(img/'+kind+''+(currp+1)+'.jpg) no-repeat -240px 0','opacity':0.7})
+					}else{
+						$('#contentleft').css({'background':'url(img/'+kind+''+(currp-1)+'.jpg) no-repeat -240px 0','opacity':0.7})
+						$('#contentright').css({'background':'url(img/'+kind+''+(currp+1)+'.jpg) no-repeat -240px 0','opacity':0.7})
+					}
+				})
+			}
+			$('#contentright i').css({'opacity':1});
+		})
+		$('#contentright i').click(function(){//灵感来源翻页
+			var Li = $('#contentmiddle ol li').length;
+			var LiWidth = 902;
+			var W = -((Li-1)*LiWidth)
+			var Left = $('#contentmiddle ol').css('margin-left').split('p')[0]*1;
+			var p = -Left/902;
+			var kind = $(this).parent().siblings('#contentmiddle').find('li').attr('kind');
+			if(Left%LiWidth==0&&Left>W){
+			$('#contentmiddle ol li[p='+(p+1)+']').siblings().removeClass('currentli');
+			$('#contentmiddle ol li[p='+(p+1)+']').addClass('currentli');
+			$('#contentmiddle ol').animate({'margin-left':Left-LiWidth},function(){
+					if(Left==(W+LiWidth)){$('#contentright i').css({'opacity':0});}
+					var currp = $('.currentli').attr('p')*1;
+					if(currp==3){
+						$('#contentleft').css({'background':'url(img/'+kind+''+(currp-1)+'.jpg) no-repeat -240px 0','opacity':0.7})
+						$('#contentright').css({'background':'#000','opacity':1})
+					}else{
+						$('#contentleft').css({'background':'url(img/'+kind+''+(currp-1)+'.jpg) no-repeat -240px 0','opacity':0.7})
+						$('#contentright').css({'background':'url(img/'+kind+''+(currp+1)+'.jpg) no-repeat -240px 0','opacity':0.7})
+					}
+				})
+			}
+			$('#contentleft i').css({'opacity':1});
+		})
+	}
+}

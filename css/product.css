@@ -52,7 +52,7 @@
 
 #dmn_bd2{width:1024px;height:64px;}
 #dmn_bd2 img{width:1024px;height:64px;}
-.dmncontent_part2{background:url(../img/dmnpart2_bg.jpg) repeat-x;width:1024px;height:auto;padding:1px 0}
+.dmncontent_part2{width:1024px;height:auto;padding:1px 0}
 .dmncontent_part2 .dmnp1{font-size:23px;font-family:"黑体";color:#EEDCB3;width:750px;margin:0 auto;height:30px;}
 .dmncontent_part2 ul{width:750px;height:201px;margin:0 auto;}
 .dmncontent_part2 ul .limitimg{width:width:174px;height:201px;float:left;margin-right:12px;}
@@ -92,7 +92,7 @@
 #eye_bd2{width:1024px;height:62px;}
 #eye_bd2 img{width:1024px;height:62px;}
 .eyecontent_part1 .sample_panel{padding-top:0;height:262px;}
-.eyecontent_part2{background:url(../img/dmnpart2_bg.jpg) repeat-x;width:1024px;height:417px;}
+.eyecontent_part2{width:1024px;height:417px;}
 
 
 
@@ -146,7 +146,7 @@
 #lip_samples table td{width:26px;height:26px;border:#313232 solid 3px;}
 #lip_samples table img{width:26px;height:26px;cursor:pointer;}
 
-.lipcontent_part2{background:url(../img/dmnpart2_bg.jpg) repeat-x;width:1024px;height:417px;}
+.lipcontent_part2{width:1024px;height:417px;}
 
 
 
@@ -155,7 +155,7 @@
 
 
 /*眼线灵感页面*/
-.insbody{background:url(../img/insbody.jpg) repeat-x;width:100%;height:680px;margin-top:63px;}
+.insbody{background:url(../img/insbody.jpg) repeat-x;width:100%;height:680px;}
 .insbody #content{width:1024px;height:680px;margin:0 auto;}
 .insbody #content #inspanel{width:1024px;height:680px;background:#fff;position:relative;}
 .insbody #contentleft{width:60px;height:680px;background:url(../img/inspirationleft.jpg) repeat-y;float:left;}
