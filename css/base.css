@@ -127,7 +127,7 @@ p a.white{color:#fff;}
 
 
 /*@寻找专柜*/
-#findcontent{background:url(../img/specialcounter_bg.jpg) no-repeat;height:655px;width:1024px;position:relative;}
+#findcontent{background:url(../img/specialcounter_bg.jpg) no-repeat;height:655px;width:1024px;position:relative;z-index:1;}
 #findleft{width:690px;height:655px;float:left;position:relative;}
 .size8{width:101px;height:27px;padding-top:2px;background:url(../img/provincebg8.png);}
 .size7{width:81px;height:26px;padding-top:2px;background:url(../img/provincebg7.png);}
