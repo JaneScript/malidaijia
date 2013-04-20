@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <title></title>
@@ -6,8 +6,7 @@
 <meta name="Keywords" content="" />
 <meta charset="utf-8" />
 <link rel="stylesheet" href="css/base.css" />
-<link rel="stylesheet" href="css/brand.css" />
-<link rel="stylesheet" href="css/jscrollpane.css" />
+<link rel="stylesheet" href="css/exchange.css" />
 </head>
 <body>
 <div id="logo">
@@ -59,77 +58,24 @@
 			</dl>
 		</div>
 	</div>
-	<div id="content">
-		<div id="center">
-			<div id="fansup"></div>
-			<div id="main">
-				<div class="fl fans picdiv">
-					<img class="fan1 hide" src="img/fan1.png" alt="" />
-					<img class="fan2 hide" src="img/fan2.png" alt="" />
-				</div>
-				<div class="fl fansArticle" style="cursor:default">
-					<div class="contentDiv">
-						<div class="nano">
-							<div class="content article" tabindex="0">
-								<p>NO1 玛粉认为</p>
-								<p>自己生下来就是</p>
-								<p>爱折腾的不凡人</p>
-								<br />
-								<p>NO2 玛粉化妆</p>
-								<p>就是为自己快乐高兴，</p>
-								<p>什么女为悦己者容统统靠边去</p>
-								<br />
-								<p>NO3 玛粉说话</p>
-								<p>总不离开「我」，</p>
-								<p>带有明显的独立特行人群通病</p>
-								<br />
-								<p>NO4玛粉喜欢</p>
-								<p>艺术小情调，</p>
-								<p>也爱尝新鲜，</p>
-								<p>对他们来说人生无创意不精彩</p>
-								<br />
-								<p>NO5玛粉不是</p>
-								<p>外太空来客，</p>
-								<p>爱扎堆谈心情讲梦想，</p>
-								<p>也懂得爱和感恩，</p>
-								<p>谢谢和sorry</p>
-								<br />
-								<p>NO6 玛粉说</p>
-								<p>工作跟玩儿一样，</p>
-								<p>偶尔烦了累了乐活一下，</p>
-								<p>当玛粉就要简单快乐</p>
-								<br />
-								<p>NO7玛粉宣言：</p>
-								<p>我们有玛丽黛佳，</p>
-								<p>我们是超级无敌的玛粉</p>
-								<br />
-								<p>你   是我们的同类吗？</p>
-								<br />
-								<br />
-								<br />
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="fl brand006">
-					<div class="mg24">
-						<a href="brandfounder.html"><div class="foundertitle"></div></a>
-					</div>
-					<div class="mg24">
-						<a href="brandstory.html"><div class="storytitle"></div></a>
-					</div>
-					<div class="mg24">
-						<a href="brandmark.html"><div class="marktitle"></div></a>
-					</div>
-					<div class="mg24">
-						<a href="brandphilosophy.html"><div class="philosophytitle"></div></a>
-					</div>
-					<div class="mg24">
-						<a href="brandfans.html"><div class="fanstitle1"></div></a>
-					</div>
-				</div>	
+	<div id="copyrightPanel">
+		<div class="copyrightdiv">
+			<div class="crdleft">
+				<p class="crdleftp1">隐私权条款声明</p>
+				<p class="crdleftp2"><a href="copyright.html">您的信息</a></p>
+				<p class="crdleftp2"><a class="hoverp" href="copyright1.html">个人信息的使用</a></p>
+				<p class="crdleftp2"><a href="copyright2.html">保密</a></p>
 			</div>
-			<div id="down"></div>
+			<div class="crdbd"></div>
+			<div class="crdright">
+				<p class="crdrightp">
+					玛丽黛佳的营运及所属权为上海菲扬化妆品有限公司所有（以下简称玛丽黛佳） 。公司尊重访问本网站的任何一个人的隐私。本声明阐述了我们可能要求您提供填写的信息以及本公司将如何应用您的这些信息。同时，此声明将告诉您如何查对我们所拥有的您的信息是否如实以及如何通知我们在资料库中修改。
+				</p>
+				<p class="crdrightp f15 mt20">个人信息的使用</p>
+				<p class="crdrightp">
+					我们将在相关的市场推广活动中不时运用您提供的信息（例如开发或提升我们的附属产品或服务）。同时，您的信息有可能被我们谨慎筛选出的公司共享。基于网站的访问者和有关服务的使用者所提供的信息反馈，我们将不遗余力地开发我们的彩妆产品和服务并将这些成果与您共享。除法律要求或如本声明开始部分所述，未经您的许可，我们将不会把您的信息提供给第三方使用。  
+				</p>
+			</div>
 		</div>
 	</div>
 	<div id="footer">
@@ -147,16 +93,14 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="js/jscrollpane.js"></script>
-<script type="text/javascript" src="js/js.js"></script>
-<script type="text/javascript">
+</body>
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jscrollpane.js"></script>
+<script src="js/curvycorners.src.js"></script>
+<script src="js/js.js"></script>
+<script>
 $(function(){
 	maire.initialize();
-	maire.brand.fans.fadeShow();
-	setInterval(function(){maire.brand.fans.fadeShow();},5000);
-    $(".nano").nanoScroller({alwaysVisible:true});
-});
+	});
 </script>
-</body>
 </html>

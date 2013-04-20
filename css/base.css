@@ -257,6 +257,7 @@ p a.white{color:#fff;}
 .fansv_ul{width:100%;}
 .fansv_ul li{float:left;width:225px;height:215px;margin:0 9px;}
 .fansv_frame{width:223px;height:163px;border:1px solid #707070;}
+.fansv_frame img{width:100%;height:100%;}
 .fansv_name{width:100%;padding:15px 0;font:12px "微软雅黑";text-align:center;color:#fff;}
 
 /*招聘*/
@@ -421,7 +422,7 @@ label{font:12px/24px "Microsoft YaHei";color:#fff;display:inline-block;width:60p
 .registheader2{font:10px/26px "Microsoft YaHei";color:#8b8b8b;margin-left:10px;}
 #registPanel .chosenselect{width:74px;height:24px;padding:0;}
 .registmore{cursor:pointer;}
-.hideregist{height:0;overflow:hidden}
+.hideregist{height:0;overflow:hidden;position:relative;}
 .sextext{color:#fff;line-height:26px;font-size:12px;font-family:"Microsoft YaHei";margin:0 15px}
 input[type="radio"]{cursor:pointer;}
 /*pro_lipstick*/
@@ -433,6 +434,20 @@ input[type="radio"]{cursor:pointer;}
 .prolistheader2{width:100%;height:20px;font:12px/20px "Microsoft YaHei";color:#4d4d4d;display:block;text-indent:20px;cursor:pointer;}
 .proleftnav .prolefthover1{background:url(../img/productlistnav_bg.jpg) no-repeat 0 bottom;}
 .proleftnav .prolefthover2{color:#fff;}
+
+.proright_table{width:100%;}
+.proright_table td{background:red;width:170px;height:170px;border:3px solid #231815;}
+
+
+
+
+
+
+
+
+
+
+
 /*找寻网页*/
 #searchhtmlPanel{width:1024px;height:655px;background:url(../img/searchhtml_bg.jpg) no-repeat;margin:0 auto;}
 .searchhtmlcontent{width:700px;padding:70px 162px 0;}
