@@ -435,8 +435,8 @@ input[type="radio"]{cursor:pointer;}
 .proleftnav .prolefthover1{background:url(../img/productlistnav_bg.jpg) no-repeat 0 bottom;}
 .proleftnav .prolefthover2{color:#fff;}
 
-.proright_table{width:100%;}
-.proright_table td{background:red;width:170px;height:170px;border:3px solid #231815;}
+.proright_table{width:100%;border-collapse:collapse;}
+.proright_table td{background:red;width:170;height:170;border:2px solid #231815;}
 
 
 
