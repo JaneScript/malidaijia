@@ -92,6 +92,12 @@ var maire = {//玛丽黛佳 全局方法
 		$('.toplink_login').click(function(){
 			_this.popshow('<div id="poplogin" class="poppanel"><p class="closepop"></p><div class="logform"><p class="logheader">用户登陆</p><div class="logitem"><label for="">用&nbsp;户&nbsp;名</label><input type="text" class="input1" /><a href="regist.html" class="toregist">点击注册</a></div><div class="logitem"><label for="">密&nbsp;&nbsp;&nbsp;&nbsp;码</label><input type="password" class="input1" /><a href="" class="toregist">忘记密码？</a></div><div class="logbtns"><p class="submit">提交</p><p class="reset">重置</p></div></div></div>',444,368,'poplogin')
 		})
+		
+		$('.shhbtns p').hover(function(){
+			$(this).addClass('shhhover')
+		},function(){
+			$(this).removeClass('shhhover')
+		})
 	}
 }
 maire.homePage = {//玛丽黛佳首页

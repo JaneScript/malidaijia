@@ -196,8 +196,8 @@
 #bg .content1 #con1right ul li{width:250px;height:70px;margin:25px 0;}
 #bg .content1 #con1right ul .imgwarp{float:left;}
 #bg .content1 #con1right ul .litext{float:left;margin-left:15px;}
-#bg .content1 #con1right ul .litext .p1{font-size:12px;font-family:"黑体";margin-top:20px;}
-#bg .content1 #con1right ul .litext .p2{font-size:12px;font-family:"黑体";color:#fff;width:90px;}
+#bg .content1 #con1right ul .litext .p1{font-size:12px;font-family:"微软雅黑";margin-top:20px;height:20px;line-height:20px;font-weight:600;}
+#bg .content1 #con1right ul .litext .p2{font-size:12px;font-family:"宋体";color:#fff;width:90px;line-height:16px;}
 #bg .content1 #con1right ul .imgwarp img{width:70px;height:70px;}
 
 #bg .content2{width:950px;height:280px;margin:5px auto;}

@@ -5,7 +5,7 @@ body{background:url(../img/bg.jpg) repeat-x;}
 #homenav{width:794px;height:36px;cursor:pointer;position:absolute;z-index:6;top:490px;left:115px;}
 #section2{width:100%;height:682px;background:url(../img/2.jpg) no-repeat 50% 0;position:relative;}
 #cover{position:absolute;left:0px;top:0px;width:1024px;height:682px;background:#000;opacity:.5;filter:Alpha(opacity=50);display:none;z-index:10;}
-#section2 a{display:block;width:100%;height:100%;font-size:14px;font-family:"Microsoft YaHei";text-align:center;color:#fff;font-weight:700;}
+#section2 a{display:block;width:100%;height:100%;font-size:14px;font-family:"Microsoft YaHei";text-align:center;color:#fff;font-weight:500;letter-spacing:3px;}
 .subnav01{width:166px;height:105px;line-height:105px;position:absolute;left:478px;top:30px;z-index:9;}
 .subnav01 a{background:rgba(128,78,33,0.8);filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#BF804e21,endcolorstr=#BF804e21);}
 
